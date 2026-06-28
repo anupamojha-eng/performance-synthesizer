@@ -1,2 +1,2 @@
 # performance-synthesizer
-AI Agents: Intensive Vibe Coding Capstone Project
+performance-synthesizer: Multi-Agent Performance Assessment System

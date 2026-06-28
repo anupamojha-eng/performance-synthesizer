@@ -1,0 +1,54 @@
+[
+  {
+    "id": "epic-oauth",
+    "epic_key": "PERF-EPIC-1",
+    "title": "Migrate Auth to OAuth2",
+    "goal_statement": "Replace legacy auth with industry-standard OAuth2, improve security, enable SSO",
+    "start_date": "2024-04-01",
+    "end_date": "2024-05-31",
+    "criticality": "critical",
+    "status": "completed",
+    "required_by": "Security audit requires modern auth",
+    "lead_engineer": "jane",
+    "estimated_total_hours": 200
+  },
+  {
+    "id": "epic-payment",
+    "epic_key": "PERF-EPIC-2",
+    "title": "Payment System Refactor",
+    "goal_statement": "Refactor payment processor, add retry logic, reduce failed transactions by 50%",
+    "start_date": "2024-04-15",
+    "end_date": "2024-06-15",
+    "criticality": "high",
+    "status": "completed",
+    "required_by": "Revenue impact from failed payments",
+    "lead_engineer": "mike",
+    "estimated_total_hours": 180
+  },
+  {
+    "id": "epic-search",
+    "epic_key": "PERF-EPIC-3",
+    "title": "Search Performance Optimization",
+    "goal_statement": "Optimize search latency from 2s to <200ms using indexed queries",
+    "start_date": "2024-05-01",
+    "end_date": "2024-06-30",
+    "criticality": "medium",
+    "status": "completed",
+    "required_by": "Improve user experience on search-heavy workloads",
+    "lead_engineer": "jane",
+    "estimated_total_hours": 120
+  },
+  {
+    "id": "epic-rate-limit",
+    "epic_key": "PERF-EPIC-4",
+    "title": "API Rate Limiting & Security",
+    "goal_statement": "Implement rate limiting, prevent abuse, document limits for partners",
+    "start_date": "2024-05-15",
+    "end_date": "2024-06-30",
+    "criticality": "high",
+    "status": "completed",
+    "required_by": "Prevent API abuse, stabilize service",
+    "lead_engineer": "jane",
+    "estimated_total_hours": 100
+  }
+]

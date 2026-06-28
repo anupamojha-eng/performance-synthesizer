@@ -1,0 +1,5722 @@
+[
+  {
+    "commit_hash": "52db9fa0",
+    "message": "docs(auth): add inline docs for client credential flow",
+    "timestamp": "2024-04-01T04:49:21Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-1",
+    "files_changed": 3,
+    "insertions": 34,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "7ee09918",
+    "message": "WIP: start client credential flow implementation",
+    "timestamp": "2024-04-01T09:40:14Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-1",
+    "files_changed": 3,
+    "insertions": 46,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "e32c262e",
+    "message": "chore: cleanup session migration after code review feedback",
+    "timestamp": "2024-04-10T07:00:58Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-2",
+    "files_changed": 8,
+    "insertions": 268,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "605ef05a",
+    "message": "fix(auth): JWKS cache edge case handling",
+    "timestamp": "2024-04-12T14:54:52Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-2",
+    "files_changed": 4,
+    "insertions": 124,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "0ca4b860",
+    "message": "feat(auth): add token refresh handler",
+    "timestamp": "2024-04-13T16:44:55Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-2",
+    "files_changed": 7,
+    "insertions": 175,
+    "deletions": 11
+  },
+  {
+    "commit_hash": "435ad84e",
+    "message": "WIP: oauth handler initial scaffold",
+    "timestamp": "2024-04-15T00:14:40Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-2",
+    "files_changed": 8,
+    "insertions": 136,
+    "deletions": 53
+  },
+  {
+    "commit_hash": "3e5dd3a6",
+    "message": "WIP: SSO endpoint initial scaffold",
+    "timestamp": "2024-04-06T15:30:33Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-3",
+    "files_changed": 2,
+    "insertions": 75,
+    "deletions": 11
+  },
+  {
+    "commit_hash": "6f8f1f2f",
+    "message": "feat(auth): complete SSO endpoint implementation",
+    "timestamp": "2024-04-06T22:24:24Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-3",
+    "files_changed": 3,
+    "insertions": 88,
+    "deletions": 35
+  },
+  {
+    "commit_hash": "9480469a",
+    "message": "refactor(auth): extract scope check into dedicated module",
+    "timestamp": "2024-04-08T03:56:19Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-5",
+    "files_changed": 7,
+    "insertions": 220,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "0f9c7e9b",
+    "message": "test(auth): session migration \u2014 happy path and error scenarios",
+    "timestamp": "2024-04-08T08:42:56Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-5",
+    "files_changed": 5,
+    "insertions": 82,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "9a1e8a5b",
+    "message": "feat(auth): add client credential flow handler",
+    "timestamp": "2024-04-09T05:02:36Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-5",
+    "files_changed": 7,
+    "insertions": 80,
+    "deletions": 56
+  },
+  {
+    "commit_hash": "edec3cb7",
+    "message": "chore: cleanup client credential flow after code review feedback",
+    "timestamp": "2024-04-09T10:12:13Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-5",
+    "files_changed": 5,
+    "insertions": 82,
+    "deletions": 5
+  },
+  {
+    "commit_hash": "cfba4a91",
+    "message": "fix(auth): handle null/missing fields in auth middleware",
+    "timestamp": "2024-04-09T16:23:39Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-5",
+    "files_changed": 5,
+    "insertions": 200,
+    "deletions": 55
+  },
+  {
+    "commit_hash": "e3068caf",
+    "message": "WIP: token revocation skeleton \u2014 rough implementation",
+    "timestamp": "2024-04-10T16:17:08Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-5",
+    "files_changed": 8,
+    "insertions": 116,
+    "deletions": 72
+  },
+  {
+    "commit_hash": "f5acacf3",
+    "message": "refactor: finalize oauth handler public API surface",
+    "timestamp": "2024-04-06T23:51:24Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-6",
+    "files_changed": 7,
+    "insertions": 59,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "570d6cf0",
+    "message": "refactor(auth): extract auth audit log into dedicated module",
+    "timestamp": "2024-04-08T14:19:05Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-6",
+    "files_changed": 4,
+    "insertions": 136,
+    "deletions": 38
+  },
+  {
+    "commit_hash": "41445823",
+    "message": "feat(auth): add token revocation handler",
+    "timestamp": "2024-04-09T08:46:22Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-6",
+    "files_changed": 8,
+    "insertions": 308,
+    "deletions": 48
+  },
+  {
+    "commit_hash": "5a627290",
+    "message": "fix(auth): resolve session migration race condition under load",
+    "timestamp": "2024-04-11T06:56:47Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-6",
+    "files_changed": 7,
+    "insertions": 63,
+    "deletions": 63
+  },
+  {
+    "commit_hash": "cdf6b893",
+    "message": "feat(auth): wire auth middleware into existing service layer",
+    "timestamp": "2024-04-11T18:55:49Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-6",
+    "files_changed": 4,
+    "insertions": 120,
+    "deletions": 29
+  },
+  {
+    "commit_hash": "9b8d8eb7",
+    "message": "WIP: SSO endpoint skeleton \u2014 rough implementation",
+    "timestamp": "2024-04-12T18:47:55Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-6",
+    "files_changed": 8,
+    "insertions": 220,
+    "deletions": 82
+  },
+  {
+    "commit_hash": "270635c6",
+    "message": "test: add edge case coverage for session migration",
+    "timestamp": "2024-04-12T20:23:27Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-6",
+    "files_changed": 4,
+    "insertions": 50,
+    "deletions": 40
+  },
+  {
+    "commit_hash": "85dd1fad",
+    "message": "chore: cleanup token revocation after code review feedback",
+    "timestamp": "2024-04-14T02:33:54Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-7",
+    "files_changed": 6,
+    "insertions": 186,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "c29b1df1",
+    "message": "WIP: start oauth handler implementation",
+    "timestamp": "2024-04-15T10:08:02Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-7",
+    "files_changed": 4,
+    "insertions": 148,
+    "deletions": 25
+  },
+  {
+    "commit_hash": "1ba1cd91",
+    "message": "feat(auth): implement auth audit log core logic",
+    "timestamp": "2024-04-15T11:51:23Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-7",
+    "files_changed": 6,
+    "insertions": 195,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "3b49c9fd",
+    "message": "chore: cleanup SSO endpoint after code review feedback",
+    "timestamp": "2024-04-12T21:57:18Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-8",
+    "files_changed": 3,
+    "insertions": 124,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "b7cba7c1",
+    "message": "fix: correct auth middleware response format to match spec",
+    "timestamp": "2024-04-14T03:14:21Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-8",
+    "files_changed": 4,
+    "insertions": 50,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "7575449e",
+    "message": "feat(auth): implement client credential flow core logic",
+    "timestamp": "2024-04-15T01:18:43Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-8",
+    "files_changed": 6,
+    "insertions": 174,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "786b5b44",
+    "message": "test(auth): integration test for token refresh happy path",
+    "timestamp": "2024-04-15T04:44:55Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-8",
+    "files_changed": 4,
+    "insertions": 108,
+    "deletions": 34
+  },
+  {
+    "commit_hash": "d953e47c",
+    "message": "WIP: rough auth audit log draft, untested",
+    "timestamp": "2024-04-15T21:42:09Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-8",
+    "files_changed": 6,
+    "insertions": 222,
+    "deletions": 60
+  },
+  {
+    "commit_hash": "68aed124",
+    "message": "feat(auth): token revocation with error handling and logging",
+    "timestamp": "2024-04-11T20:43:57Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-9",
+    "files_changed": 8,
+    "insertions": 192,
+    "deletions": 40
+  },
+  {
+    "commit_hash": "77df499b",
+    "message": "feat(auth): add auth middleware handler",
+    "timestamp": "2024-04-12T10:30:05Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-9",
+    "files_changed": 11,
+    "insertions": 236,
+    "deletions": 99
+  },
+  {
+    "commit_hash": "8b2d7d97",
+    "message": "WIP: start scope check implementation",
+    "timestamp": "2024-04-12T12:52:11Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-9",
+    "files_changed": 9,
+    "insertions": 90,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "1179a2cf",
+    "message": "feat(auth): add token refresh handler",
+    "timestamp": "2024-04-13T05:41:59Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-9",
+    "files_changed": 5,
+    "insertions": 117,
+    "deletions": 55
+  },
+  {
+    "commit_hash": "fd9ffa40",
+    "message": "refactor(auth): extract PKCE flow into dedicated module",
+    "timestamp": "2024-04-14T00:55:29Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-9",
+    "files_changed": 5,
+    "insertions": 65,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "2107943b",
+    "message": "refactor(auth): extract token revocation into dedicated module",
+    "timestamp": "2024-04-14T05:05:01Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-9",
+    "files_changed": 6,
+    "insertions": 105,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "bbf87106",
+    "message": "feat(auth): JWT validation with error handling and logging",
+    "timestamp": "2024-04-14T12:03:50Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-9",
+    "files_changed": 12,
+    "insertions": 180,
+    "deletions": 128
+  },
+  {
+    "commit_hash": "d8755f68",
+    "message": "test(auth): oauth handler \u2014 happy path and error scenarios",
+    "timestamp": "2024-04-15T23:54:01Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-9",
+    "files_changed": 12,
+    "insertions": 306,
+    "deletions": 112
+  },
+  {
+    "commit_hash": "9770424e",
+    "message": "feat(auth): complete scope check implementation",
+    "timestamp": "2024-04-16T00:22:01Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-9",
+    "files_changed": 5,
+    "insertions": 97,
+    "deletions": 43
+  },
+  {
+    "commit_hash": "f6df7651",
+    "message": "fix(auth): handle null/missing fields in PKCE flow",
+    "timestamp": "2024-04-17T07:09:33Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-9",
+    "files_changed": 12,
+    "insertions": 300,
+    "deletions": 56
+  },
+  {
+    "commit_hash": "7239b21c",
+    "message": "feat(auth): wire session migration into existing service layer",
+    "timestamp": "2024-04-15T12:30:36Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-10",
+    "files_changed": 6,
+    "insertions": 225,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "93c0bbc6",
+    "message": "test(auth): integration test for JWKS cache happy path",
+    "timestamp": "2024-04-15T18:18:51Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-10",
+    "files_changed": 5,
+    "insertions": 97,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "f51d1e02",
+    "message": "chore: cleanup JWKS cache after code review feedback",
+    "timestamp": "2024-04-16T00:08:14Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-10",
+    "files_changed": 3,
+    "insertions": 46,
+    "deletions": 35
+  },
+  {
+    "commit_hash": "bd9ad775",
+    "message": "fix: correct client credential flow response format to match spec",
+    "timestamp": "2024-04-16T01:56:40Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-10",
+    "files_changed": 5,
+    "insertions": 37,
+    "deletions": 35
+  },
+  {
+    "commit_hash": "1fe71d7b",
+    "message": "WIP: start client credential flow implementation",
+    "timestamp": "2024-04-16T08:13:18Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-10",
+    "files_changed": 3,
+    "insertions": 127,
+    "deletions": 29
+  },
+  {
+    "commit_hash": "7ae7481f",
+    "message": "docs(auth): add inline docs for auth audit log",
+    "timestamp": "2024-04-15T10:25:17Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-12",
+    "files_changed": 4,
+    "insertions": 148,
+    "deletions": 25
+  },
+  {
+    "commit_hash": "36a2296a",
+    "message": "fix(auth): resolve scope check race condition under load",
+    "timestamp": "2024-04-16T02:06:09Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-12",
+    "files_changed": 5,
+    "insertions": 175,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "61ad7be0",
+    "message": "feat(auth): wire oauth handler into existing service layer",
+    "timestamp": "2024-04-16T21:57:35Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-12",
+    "files_changed": 5,
+    "insertions": 110,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "dd65bcd0",
+    "message": "WIP: token refresh skeleton \u2014 rough implementation",
+    "timestamp": "2024-04-17T02:26:28Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-12",
+    "files_changed": 6,
+    "insertions": 75,
+    "deletions": 48
+  },
+  {
+    "commit_hash": "99f4fa49",
+    "message": "WIP: JWKS cache initial scaffold",
+    "timestamp": "2024-04-20T20:44:40Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-13",
+    "files_changed": 2,
+    "insertions": 45,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "c3c334cc",
+    "message": "chore: cleanup JWKS cache after code review feedback",
+    "timestamp": "2024-04-22T08:37:43Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-13",
+    "files_changed": 4,
+    "insertions": 156,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "a7ba100f",
+    "message": "feat(auth): complete token refresh implementation",
+    "timestamp": "2024-04-17T07:17:20Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-14",
+    "files_changed": 5,
+    "insertions": 107,
+    "deletions": 11
+  },
+  {
+    "commit_hash": "87aa9df1",
+    "message": "fix: correct auth middleware response format to match spec",
+    "timestamp": "2024-04-18T02:18:09Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-14",
+    "files_changed": 6,
+    "insertions": 48,
+    "deletions": 38
+  },
+  {
+    "commit_hash": "c71c3aa6",
+    "message": "feat(auth): wire client credential flow into existing service layer",
+    "timestamp": "2024-04-20T02:50:52Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-14",
+    "files_changed": 6,
+    "insertions": 156,
+    "deletions": 48
+  },
+  {
+    "commit_hash": "e563ce58",
+    "message": "WIP: SSO endpoint skeleton \u2014 rough implementation",
+    "timestamp": "2024-04-24T00:48:47Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-14",
+    "files_changed": 5,
+    "insertions": 77,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "3291c33d",
+    "message": "fix: JWT validation off-by-one error in boundary condition",
+    "timestamp": "2024-04-22T21:27:17Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-15",
+    "files_changed": 3,
+    "insertions": 31,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "ead9f4b3",
+    "message": "WIP: scope check skeleton \u2014 rough implementation",
+    "timestamp": "2024-04-23T01:38:47Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-15",
+    "files_changed": 6,
+    "insertions": 270,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "f8c1d25c",
+    "message": "docs(auth): add inline docs for auth audit log",
+    "timestamp": "2024-04-23T18:51:16Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-15",
+    "files_changed": 3,
+    "insertions": 75,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "8f5631d7",
+    "message": "feat(auth): add JWKS cache handler",
+    "timestamp": "2024-04-24T04:35:02Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-15",
+    "files_changed": 5,
+    "insertions": 67,
+    "deletions": 43
+  },
+  {
+    "commit_hash": "69486c1a",
+    "message": "fix: client credential flow off-by-one error in boundary condition",
+    "timestamp": "2024-04-17T12:45:21Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-16",
+    "files_changed": 6,
+    "insertions": 267,
+    "deletions": 46
+  },
+  {
+    "commit_hash": "fd61b7e5",
+    "message": "feat(auth): implement PKCE flow core logic",
+    "timestamp": "2024-04-19T15:51:22Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-16",
+    "files_changed": 7,
+    "insertions": 63,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "7c818f0c",
+    "message": "WIP: rough JWKS cache draft, untested",
+    "timestamp": "2024-04-21T02:36:49Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-16",
+    "files_changed": 8,
+    "insertions": 116,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "57616a52",
+    "message": "feat(auth): complete scope check implementation",
+    "timestamp": "2024-04-21T05:16:01Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-16",
+    "files_changed": 7,
+    "insertions": 154,
+    "deletions": 67
+  },
+  {
+    "commit_hash": "9ab04ce5",
+    "message": "chore: cleanup PKCE flow after code review feedback",
+    "timestamp": "2024-04-21T08:56:12Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-17",
+    "files_changed": 6,
+    "insertions": 258,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "98515acd",
+    "message": "WIP: token revocation initial scaffold",
+    "timestamp": "2024-04-24T12:26:19Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-17",
+    "files_changed": 5,
+    "insertions": 77,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "1827d581",
+    "message": "feat(auth): SSO endpoint with error handling and logging",
+    "timestamp": "2024-04-25T21:01:59Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-17",
+    "files_changed": 5,
+    "insertions": 135,
+    "deletions": 41
+  },
+  {
+    "commit_hash": "a774c164",
+    "message": "feat(auth): JWKS cache with error handling and logging",
+    "timestamp": "2024-04-18T14:29:39Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-18",
+    "files_changed": 4,
+    "insertions": 98,
+    "deletions": 41
+  },
+  {
+    "commit_hash": "3f03fcc4",
+    "message": "fix(auth): token refresh edge case handling",
+    "timestamp": "2024-04-23T21:44:31Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-18",
+    "files_changed": 8,
+    "insertions": 216,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "6b8dc1d0",
+    "message": "style(auth): lint and format fixes in oauth handler",
+    "timestamp": "2024-04-24T00:52:26Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-18",
+    "files_changed": 7,
+    "insertions": 129,
+    "deletions": 25
+  },
+  {
+    "commit_hash": "655bc910",
+    "message": "WIP: rough PKCE flow draft, untested",
+    "timestamp": "2024-04-27T01:19:14Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-18",
+    "files_changed": 8,
+    "insertions": 168,
+    "deletions": 72
+  },
+  {
+    "commit_hash": "af1969fb",
+    "message": "fix: correct oauth handler response format to match spec",
+    "timestamp": "2024-04-22T08:17:06Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-19",
+    "files_changed": 6,
+    "insertions": 153,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "6f2f7b56",
+    "message": "WIP: token refresh skeleton \u2014 rough implementation",
+    "timestamp": "2024-04-24T10:53:54Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-19",
+    "files_changed": 7,
+    "insertions": 182,
+    "deletions": 23
+  },
+  {
+    "commit_hash": "64552818",
+    "message": "feat(auth): wire JWT validation into existing service layer",
+    "timestamp": "2024-04-24T15:26:59Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-19",
+    "files_changed": 8,
+    "insertions": 264,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "5e6ca0a5",
+    "message": "feat(auth): complete JWT validation implementation",
+    "timestamp": "2024-04-24T15:45:11Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-19",
+    "files_changed": 7,
+    "insertions": 287,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "21744084",
+    "message": "feat(auth): implement scope check core logic",
+    "timestamp": "2024-04-24T17:22:35Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-19",
+    "files_changed": 8,
+    "insertions": 224,
+    "deletions": 61
+  },
+  {
+    "commit_hash": "8f7cdf1a",
+    "message": "test(auth): integration test for oauth handler happy path",
+    "timestamp": "2024-04-25T11:15:12Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-19",
+    "files_changed": 5,
+    "insertions": 140,
+    "deletions": 55
+  },
+  {
+    "commit_hash": "239ca2c7",
+    "message": "feat(auth): auth audit log with error handling and logging",
+    "timestamp": "2024-04-25T21:59:58Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-19",
+    "files_changed": 5,
+    "insertions": 112,
+    "deletions": 15
+  },
+  {
+    "commit_hash": "fb69f46c",
+    "message": "WIP: rough PKCE flow draft, untested",
+    "timestamp": "2024-04-24T11:52:10Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-20",
+    "files_changed": 4,
+    "insertions": 118,
+    "deletions": 29
+  },
+  {
+    "commit_hash": "04f5c3f2",
+    "message": "feat(auth): implement SSO endpoint core logic",
+    "timestamp": "2024-04-24T13:36:36Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-20",
+    "files_changed": 6,
+    "insertions": 240,
+    "deletions": 52
+  },
+  {
+    "commit_hash": "84c7d5ff",
+    "message": "docs(auth): add inline docs for scope check",
+    "timestamp": "2024-04-26T16:41:28Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-20",
+    "files_changed": 5,
+    "insertions": 180,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "922b9eb0",
+    "message": "fix: JWT validation off-by-one error in boundary condition",
+    "timestamp": "2024-04-27T01:56:15Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-20",
+    "files_changed": 3,
+    "insertions": 87,
+    "deletions": 11
+  },
+  {
+    "commit_hash": "d81dd4c4",
+    "message": "WIP: client credential flow skeleton \u2014 rough implementation",
+    "timestamp": "2024-04-26T16:18:41Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-21",
+    "files_changed": 3,
+    "insertions": 31,
+    "deletions": 33
+  },
+  {
+    "commit_hash": "ee665613",
+    "message": "feat(auth): implement JWT validation core logic",
+    "timestamp": "2024-04-30T07:25:23Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-21",
+    "files_changed": 2,
+    "insertions": 43,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "24db2b70",
+    "message": "feat(auth): complete token refresh implementation",
+    "timestamp": "2024-05-03T16:10:21Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-21",
+    "files_changed": 4,
+    "insertions": 114,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "6936a1f1",
+    "message": "refactor: finalize client credential flow public API surface",
+    "timestamp": "2024-04-27T17:52:25Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-22",
+    "files_changed": 1,
+    "insertions": 16,
+    "deletions": 7
+  },
+  {
+    "commit_hash": "13a91d78",
+    "message": "WIP: rough JWKS cache draft, untested",
+    "timestamp": "2024-04-28T08:31:08Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-22",
+    "files_changed": 2,
+    "insertions": 45,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "4c35cd51",
+    "message": "style(auth): lint and format fixes in JWT validation",
+    "timestamp": "2024-04-25T22:34:44Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-23",
+    "files_changed": 4,
+    "insertions": 130,
+    "deletions": 44
+  },
+  {
+    "commit_hash": "c5bacb50",
+    "message": "WIP: start client credential flow implementation",
+    "timestamp": "2024-04-26T03:10:58Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-23",
+    "files_changed": 3,
+    "insertions": 25,
+    "deletions": 25
+  },
+  {
+    "commit_hash": "ac1c7403",
+    "message": "feat(auth): wire oauth handler into existing service layer",
+    "timestamp": "2024-04-26T22:48:25Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-23",
+    "files_changed": 2,
+    "insertions": 74,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "b50d5f4f",
+    "message": "feat(auth): implement oauth handler core logic",
+    "timestamp": "2024-04-29T22:19:06Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-24",
+    "files_changed": 6,
+    "insertions": 207,
+    "deletions": 26
+  },
+  {
+    "commit_hash": "9af5c986",
+    "message": "docs(auth): add inline docs for JWKS cache",
+    "timestamp": "2024-04-30T02:22:15Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-24",
+    "files_changed": 6,
+    "insertions": 261,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "cb19d851",
+    "message": "WIP: start JWKS cache implementation",
+    "timestamp": "2024-04-30T12:07:56Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-24",
+    "files_changed": 6,
+    "insertions": 186,
+    "deletions": 40
+  },
+  {
+    "commit_hash": "caf29c01",
+    "message": "fix(auth): handle null/missing fields in JWKS cache",
+    "timestamp": "2024-05-01T00:52:26Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-24",
+    "files_changed": 6,
+    "insertions": 183,
+    "deletions": 70
+  },
+  {
+    "commit_hash": "447f4e71",
+    "message": "refactor(auth): extract token refresh into dedicated module",
+    "timestamp": "2024-04-27T13:42:03Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-25",
+    "files_changed": 2,
+    "insertions": 86,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "beac8132",
+    "message": "WIP: scope check initial scaffold",
+    "timestamp": "2024-04-27T09:27:26Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-26",
+    "files_changed": 5,
+    "insertions": 132,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "a5eca2f6",
+    "message": "feat(auth): complete oauth handler implementation",
+    "timestamp": "2024-04-28T22:10:13Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-26",
+    "files_changed": 3,
+    "insertions": 108,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "914fb8cd",
+    "message": "feat(auth): add token refresh handler",
+    "timestamp": "2024-04-29T04:33:33Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-26",
+    "files_changed": 5,
+    "insertions": 185,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "d9d00a9a",
+    "message": "refactor(auth): extract auth audit log into dedicated module",
+    "timestamp": "2024-05-09T01:07:31Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-27",
+    "files_changed": 2,
+    "insertions": 36,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "e8a43c67",
+    "message": "feat(auth): complete token revocation implementation",
+    "timestamp": "2024-05-09T12:02:13Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-27",
+    "files_changed": 4,
+    "insertions": 36,
+    "deletions": 45
+  },
+  {
+    "commit_hash": "d4a82488",
+    "message": "WIP: rough PKCE flow draft, untested",
+    "timestamp": "2024-05-10T14:36:28Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-27",
+    "files_changed": 2,
+    "insertions": 59,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "20fd6fed",
+    "message": "feat(auth): wire auth audit log into existing service layer",
+    "timestamp": "2024-04-29T04:27:39Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-28",
+    "files_changed": 3,
+    "insertions": 108,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "7e716739",
+    "message": "feat(auth): complete oauth handler implementation",
+    "timestamp": "2024-04-29T06:54:41Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-28",
+    "files_changed": 2,
+    "insertions": 78,
+    "deletions": 23
+  },
+  {
+    "commit_hash": "d5f56c81",
+    "message": "chore: setup auth middleware module boilerplate",
+    "timestamp": "2024-04-29T07:25:41Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-28",
+    "files_changed": 3,
+    "insertions": 49,
+    "deletions": 23
+  },
+  {
+    "commit_hash": "80257798",
+    "message": "refactor: finalize JWT validation public API surface",
+    "timestamp": "2024-04-29T07:14:50Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-29",
+    "files_changed": 4,
+    "insertions": 160,
+    "deletions": 37
+  },
+  {
+    "commit_hash": "d99215f8",
+    "message": "feat(auth): add JWT validation handler",
+    "timestamp": "2024-04-29T14:03:59Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-29",
+    "files_changed": 4,
+    "insertions": 144,
+    "deletions": 26
+  },
+  {
+    "commit_hash": "24560085",
+    "message": "WIP: SSO endpoint initial scaffold",
+    "timestamp": "2024-04-29T19:32:25Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-29",
+    "files_changed": 2,
+    "insertions": 28,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "705164ed",
+    "message": "WIP: JWKS cache initial scaffold",
+    "timestamp": "2024-05-02T00:59:16Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-30",
+    "files_changed": 6,
+    "insertions": 261,
+    "deletions": 44
+  },
+  {
+    "commit_hash": "b92a9d2a",
+    "message": "feat(auth): oauth handler with error handling and logging",
+    "timestamp": "2024-05-03T14:55:52Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-30",
+    "files_changed": 6,
+    "insertions": 144,
+    "deletions": 34
+  },
+  {
+    "commit_hash": "7663897d",
+    "message": "fix(auth): token revocation edge case handling",
+    "timestamp": "2024-05-04T06:01:14Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-30",
+    "files_changed": 3,
+    "insertions": 58,
+    "deletions": 4
+  },
+  {
+    "commit_hash": "8f76f788",
+    "message": "docs(auth): add inline docs for JWKS cache",
+    "timestamp": "2024-05-04T06:47:09Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-30",
+    "files_changed": 4,
+    "insertions": 162,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "e57a8e28",
+    "message": "chore: cleanup SSO endpoint after code review feedback",
+    "timestamp": "2024-05-06T02:41:57Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-31",
+    "files_changed": 6,
+    "insertions": 261,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "6ee73f5a",
+    "message": "fix(auth): resolve token refresh race condition under load",
+    "timestamp": "2024-05-07T05:17:08Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-31",
+    "files_changed": 5,
+    "insertions": 37,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "6de0dc2b",
+    "message": "test(auth): add unit tests for SSO endpoint",
+    "timestamp": "2024-05-08T19:38:20Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-31",
+    "files_changed": 8,
+    "insertions": 76,
+    "deletions": 37
+  },
+  {
+    "commit_hash": "bb778eb4",
+    "message": "WIP: rough auth audit log draft, untested",
+    "timestamp": "2024-05-09T14:56:39Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-31",
+    "files_changed": 5,
+    "insertions": 132,
+    "deletions": 35
+  },
+  {
+    "commit_hash": "44b57473",
+    "message": "feat(auth): wire client credential flow into existing service layer",
+    "timestamp": "2024-05-10T14:35:38Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-31",
+    "files_changed": 7,
+    "insertions": 206,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "993a8a06",
+    "message": "refactor(auth): extract token revocation into dedicated module",
+    "timestamp": "2024-05-12T19:41:58Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-31",
+    "files_changed": 6,
+    "insertions": 96,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "a72aeecb",
+    "message": "docs(auth): add inline docs for JWKS cache",
+    "timestamp": "2024-05-04T14:05:29Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-32",
+    "files_changed": 5,
+    "insertions": 112,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "7e067459",
+    "message": "feat(auth): implement auth audit log core logic",
+    "timestamp": "2024-05-07T01:28:02Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-32",
+    "files_changed": 3,
+    "insertions": 57,
+    "deletions": 11
+  },
+  {
+    "commit_hash": "c9c2ded8",
+    "message": "chore: setup token refresh module boilerplate",
+    "timestamp": "2024-05-07T08:39:12Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-32",
+    "files_changed": 4,
+    "insertions": 32,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "beccdca9",
+    "message": "feat(auth): token refresh with error handling and logging",
+    "timestamp": "2024-05-08T12:31:19Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-33",
+    "files_changed": 4,
+    "insertions": 124,
+    "deletions": 38
+  },
+  {
+    "commit_hash": "8a404031",
+    "message": "feat(auth): wire session migration into existing service layer",
+    "timestamp": "2024-05-04T19:12:56Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-34",
+    "files_changed": 6,
+    "insertions": 219,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "e1e06ccf",
+    "message": "style(auth): lint and format fixes in JWKS cache",
+    "timestamp": "2024-05-08T06:00:03Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-34",
+    "files_changed": 3,
+    "insertions": 126,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "2d7ab7e7",
+    "message": "chore: setup oauth handler module boilerplate",
+    "timestamp": "2024-05-09T00:41:56Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-34",
+    "files_changed": 4,
+    "insertions": 176,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "a5288b30",
+    "message": "WIP: start oauth handler implementation",
+    "timestamp": "2024-05-06T05:50:37Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-35",
+    "files_changed": 4,
+    "insertions": 168,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "8d354eb1",
+    "message": "refactor(auth): extract JWKS cache into dedicated module",
+    "timestamp": "2024-05-07T09:42:53Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-35",
+    "files_changed": 4,
+    "insertions": 168,
+    "deletions": 40
+  },
+  {
+    "commit_hash": "197ad307",
+    "message": "chore: cleanup client credential flow after code review feedback",
+    "timestamp": "2024-05-07T20:46:38Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-35",
+    "files_changed": 2,
+    "insertions": 45,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "1b34a9d3",
+    "message": "test(auth): integration test for auth audit log happy path",
+    "timestamp": "2024-05-07T00:02:56Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-36",
+    "files_changed": 3,
+    "insertions": 108,
+    "deletions": 26
+  },
+  {
+    "commit_hash": "d2706686",
+    "message": "fix: SSO endpoint off-by-one error in boundary condition",
+    "timestamp": "2024-05-07T10:28:50Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-36",
+    "files_changed": 4,
+    "insertions": 86,
+    "deletions": 29
+  },
+  {
+    "commit_hash": "f0ef1f73",
+    "message": "chore: cleanup auth audit log after code review feedback",
+    "timestamp": "2024-05-07T10:54:30Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-36",
+    "files_changed": 4,
+    "insertions": 114,
+    "deletions": 29
+  },
+  {
+    "commit_hash": "3ef86489",
+    "message": "WIP: token revocation skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-07T17:57:03Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-36",
+    "files_changed": 5,
+    "insertions": 220,
+    "deletions": 38
+  },
+  {
+    "commit_hash": "05a68b64",
+    "message": "feat(auth): PKCE flow with error handling and logging",
+    "timestamp": "2024-05-07T21:35:00Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-36",
+    "files_changed": 6,
+    "insertions": 258,
+    "deletions": 68
+  },
+  {
+    "commit_hash": "b089b433",
+    "message": "chore: cleanup auth audit log after code review feedback",
+    "timestamp": "2024-05-07T22:47:10Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-37",
+    "files_changed": 2,
+    "insertions": 20,
+    "deletions": 11
+  },
+  {
+    "commit_hash": "45e7cbc5",
+    "message": "WIP: start auth middleware implementation",
+    "timestamp": "2024-05-08T03:43:08Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-37",
+    "files_changed": 2,
+    "insertions": 83,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "3945c1f7",
+    "message": "feat(auth): add auth middleware handler",
+    "timestamp": "2024-05-11T15:35:07Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-38",
+    "files_changed": 4,
+    "insertions": 164,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "9cb6123d",
+    "message": "refactor: finalize session migration public API surface",
+    "timestamp": "2024-05-12T02:07:13Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-38",
+    "files_changed": 6,
+    "insertions": 51,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "667ab1da",
+    "message": "fix(auth): resolve JWT validation race condition under load",
+    "timestamp": "2024-05-12T19:41:13Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-38",
+    "files_changed": 4,
+    "insertions": 38,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "282eff8d",
+    "message": "WIP: token refresh initial scaffold",
+    "timestamp": "2024-05-13T19:06:47Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-38",
+    "files_changed": 5,
+    "insertions": 150,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "860b848b",
+    "message": "feat(auth): add session migration handler",
+    "timestamp": "2024-05-15T00:00:54Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-38",
+    "files_changed": 7,
+    "insertions": 59,
+    "deletions": 7
+  },
+  {
+    "commit_hash": "d3b0859a",
+    "message": "refactor(auth): extract auth audit log into dedicated module",
+    "timestamp": "2024-05-15T15:18:53Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-38",
+    "files_changed": 4,
+    "insertions": 134,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "3eb94ea4",
+    "message": "test(auth): add unit tests for client credential flow",
+    "timestamp": "2024-05-16T22:20:01Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-38",
+    "files_changed": 4,
+    "insertions": 164,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "6aa19cb1",
+    "message": "style(auth): lint and format fixes in PKCE flow",
+    "timestamp": "2024-05-14T23:26:57Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-39",
+    "files_changed": 1,
+    "insertions": 30,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "6d5cf6c0",
+    "message": "chore: setup SSO endpoint module boilerplate",
+    "timestamp": "2024-05-15T00:55:59Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-39",
+    "files_changed": 2,
+    "insertions": 21,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "54227860",
+    "message": "WIP: rough JWT validation draft, untested",
+    "timestamp": "2024-05-14T03:19:55Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-40",
+    "files_changed": 2,
+    "insertions": 54,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "06cb8f38",
+    "message": "refactor(auth): extract JWKS cache into dedicated module",
+    "timestamp": "2024-05-14T03:23:18Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-40",
+    "files_changed": 4,
+    "insertions": 112,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "42244c5f",
+    "message": "style(auth): lint and format fixes in token revocation",
+    "timestamp": "2024-05-14T06:10:16Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-40",
+    "files_changed": 2,
+    "insertions": 49,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "c55ddf25",
+    "message": "WIP: token revocation skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-12T00:29:34Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-42",
+    "files_changed": 6,
+    "insertions": 171,
+    "deletions": 54
+  },
+  {
+    "commit_hash": "a8f7b74b",
+    "message": "style(auth): lint and format fixes in session migration",
+    "timestamp": "2024-05-12T08:17:35Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-42",
+    "files_changed": 4,
+    "insertions": 180,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "f4b7936d",
+    "message": "feat(auth): wire session migration into existing service layer",
+    "timestamp": "2024-05-13T10:52:49Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-42",
+    "files_changed": 5,
+    "insertions": 92,
+    "deletions": 46
+  },
+  {
+    "commit_hash": "889976c9",
+    "message": "chore: cleanup client credential flow after code review feedback",
+    "timestamp": "2024-05-18T01:32:10Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-43",
+    "files_changed": 3,
+    "insertions": 72,
+    "deletions": 17
+  },
+  {
+    "commit_hash": "a5a0fa6c",
+    "message": "feat(auth): implement session migration core logic",
+    "timestamp": "2024-05-21T14:28:52Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-43",
+    "files_changed": 3,
+    "insertions": 42,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "7998ed60",
+    "message": "WIP: rough JWT validation draft, untested",
+    "timestamp": "2024-05-22T08:09:49Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-43",
+    "files_changed": 6,
+    "insertions": 189,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "aa2f3228",
+    "message": "feat(auth): add scope check handler",
+    "timestamp": "2024-05-18T06:30:26Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-44",
+    "files_changed": 4,
+    "insertions": 34,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "55c851b7",
+    "message": "WIP: start token refresh implementation",
+    "timestamp": "2024-05-20T12:34:50Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-44",
+    "files_changed": 4,
+    "insertions": 58,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "c8531a7f",
+    "message": "refactor: finalize JWT validation public API surface",
+    "timestamp": "2024-05-22T13:33:55Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-44",
+    "files_changed": 4,
+    "insertions": 176,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "a609396b",
+    "message": "fix(auth): handle null/missing fields in auth middleware",
+    "timestamp": "2024-05-22T20:10:53Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-44",
+    "files_changed": 7,
+    "insertions": 133,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "1894483c",
+    "message": "feat(payments): wire amount validation into existing service layer",
+    "timestamp": "2024-04-20T17:43:22Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-46",
+    "files_changed": 6,
+    "insertions": 207,
+    "deletions": 56
+  },
+  {
+    "commit_hash": "bd016794",
+    "message": "chore: cleanup subscription renewal after code review feedback",
+    "timestamp": "2024-04-21T08:54:15Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-46",
+    "files_changed": 3,
+    "insertions": 81,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "cfc01400",
+    "message": "WIP: rough payment vault draft, untested",
+    "timestamp": "2024-04-21T13:17:33Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-46",
+    "files_changed": 5,
+    "insertions": 210,
+    "deletions": 23
+  },
+  {
+    "commit_hash": "780d22ce",
+    "message": "feat(payments): implement dispute workflow core logic",
+    "timestamp": "2024-04-17T09:18:07Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-47",
+    "files_changed": 6,
+    "insertions": 264,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "22c4ec0c",
+    "message": "WIP: rough refund logic draft, untested",
+    "timestamp": "2024-04-17T23:51:35Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-47",
+    "files_changed": 7,
+    "insertions": 206,
+    "deletions": 44
+  },
+  {
+    "commit_hash": "e5d91a03",
+    "message": "test(payments): add unit tests for amount validation",
+    "timestamp": "2024-04-18T08:41:50Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-47",
+    "files_changed": 6,
+    "insertions": 138,
+    "deletions": 58
+  },
+  {
+    "commit_hash": "d005e2f0",
+    "message": "fix: correct subscription renewal response format to match spec",
+    "timestamp": "2024-04-18T09:15:49Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-47",
+    "files_changed": 8,
+    "insertions": 60,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "c41754cb",
+    "message": "style(payments): lint and format fixes in charge flow",
+    "timestamp": "2024-04-19T10:23:20Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-47",
+    "files_changed": 4,
+    "insertions": 148,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "8ab05c6b",
+    "message": "WIP: refund logic initial scaffold",
+    "timestamp": "2024-04-21T00:55:43Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-48",
+    "files_changed": 6,
+    "insertions": 54,
+    "deletions": 34
+  },
+  {
+    "commit_hash": "a690a24d",
+    "message": "docs(payments): add inline docs for payment vault",
+    "timestamp": "2024-04-21T12:21:53Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-48",
+    "files_changed": 3,
+    "insertions": 118,
+    "deletions": 11
+  },
+  {
+    "commit_hash": "ff2403d6",
+    "message": "refactor(payments): extract circuit breaker into dedicated module",
+    "timestamp": "2024-04-22T05:53:00Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-48",
+    "files_changed": 4,
+    "insertions": 136,
+    "deletions": 45
+  },
+  {
+    "commit_hash": "3d2bf604",
+    "message": "feat(payments): implement webhook handler core logic",
+    "timestamp": "2024-04-20T02:20:13Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-49",
+    "files_changed": 4,
+    "insertions": 106,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "22768f34",
+    "message": "WIP: refund logic initial scaffold",
+    "timestamp": "2024-04-21T11:02:39Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-49",
+    "files_changed": 4,
+    "insertions": 178,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "11c10c33",
+    "message": "fix(payments): handle null/missing fields in payment vault",
+    "timestamp": "2024-04-23T21:47:15Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-49",
+    "files_changed": 6,
+    "insertions": 258,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "e1f3ac1d",
+    "message": "feat(payments): complete circuit breaker implementation",
+    "timestamp": "2024-04-27T07:53:42Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-49",
+    "files_changed": 3,
+    "insertions": 133,
+    "deletions": 19
+  },
+  {
+    "commit_hash": "5954090c",
+    "message": "feat(payments): complete refund logic implementation",
+    "timestamp": "2024-04-24T07:42:19Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-50",
+    "files_changed": 5,
+    "insertions": 190,
+    "deletions": 56
+  },
+  {
+    "commit_hash": "665e4729",
+    "message": "WIP: payment event stream skeleton \u2014 rough implementation",
+    "timestamp": "2024-04-24T15:04:58Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-50",
+    "files_changed": 6,
+    "insertions": 234,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "e7166ac3",
+    "message": "feat(payments): implement amount validation core logic",
+    "timestamp": "2024-04-25T22:16:00Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-50",
+    "files_changed": 5,
+    "insertions": 195,
+    "deletions": 48
+  },
+  {
+    "commit_hash": "cddf5f61",
+    "message": "test: add edge case coverage for refund logic",
+    "timestamp": "2024-04-23T08:40:24Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-51",
+    "files_changed": 3,
+    "insertions": 49,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "8cbcf9f6",
+    "message": "WIP: webhook handler skeleton \u2014 rough implementation",
+    "timestamp": "2024-04-23T14:34:59Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-51",
+    "files_changed": 4,
+    "insertions": 90,
+    "deletions": 26
+  },
+  {
+    "commit_hash": "a2fbec39",
+    "message": "style(payments): lint and format fixes in webhook handler",
+    "timestamp": "2024-04-23T19:52:19Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-51",
+    "files_changed": 4,
+    "insertions": 140,
+    "deletions": 45
+  },
+  {
+    "commit_hash": "090759c5",
+    "message": "fix(payments): handle null/missing fields in webhook handler",
+    "timestamp": "2024-04-24T01:34:02Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-51",
+    "files_changed": 6,
+    "insertions": 57,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "b592fdcf",
+    "message": "feat(payments): wire amount validation into existing service layer",
+    "timestamp": "2024-04-24T10:27:00Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-51",
+    "files_changed": 5,
+    "insertions": 150,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "03b5cb07",
+    "message": "chore: cleanup payment vault after code review feedback",
+    "timestamp": "2024-05-01T17:18:10Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-52",
+    "files_changed": 3,
+    "insertions": 85,
+    "deletions": 31
+  },
+  {
+    "commit_hash": "ef39e2b3",
+    "message": "WIP: circuit breaker skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-03T08:31:14Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-52",
+    "files_changed": 3,
+    "insertions": 57,
+    "deletions": 23
+  },
+  {
+    "commit_hash": "1da713af",
+    "message": "fix(payments): 3DS handler edge case handling",
+    "timestamp": "2024-04-23T15:52:32Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-53",
+    "files_changed": 6,
+    "insertions": 45,
+    "deletions": 60
+  },
+  {
+    "commit_hash": "2b1ac6c3",
+    "message": "style(payments): lint and format fixes in payment retry",
+    "timestamp": "2024-04-26T04:43:15Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-53",
+    "files_changed": 5,
+    "insertions": 122,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "e4a65620",
+    "message": "test(payments): 3DS handler \u2014 happy path and error scenarios",
+    "timestamp": "2024-04-26T17:48:51Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-53",
+    "files_changed": 7,
+    "insertions": 262,
+    "deletions": 79
+  },
+  {
+    "commit_hash": "bbb44309",
+    "message": "feat(payments): add 3DS handler handler",
+    "timestamp": "2024-04-27T00:26:17Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-53",
+    "files_changed": 5,
+    "insertions": 97,
+    "deletions": 48
+  },
+  {
+    "commit_hash": "21d45f12",
+    "message": "WIP: payment vault skeleton \u2014 rough implementation",
+    "timestamp": "2024-04-27T13:19:40Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-53",
+    "files_changed": 4,
+    "insertions": 152,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "5feb6a96",
+    "message": "feat(payments): implement payment retry core logic",
+    "timestamp": "2024-05-01T21:12:21Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-53",
+    "files_changed": 4,
+    "insertions": 170,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "8eca91c2",
+    "message": "WIP: webhook handler skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-01T15:02:49Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-54",
+    "files_changed": 2,
+    "insertions": 65,
+    "deletions": 3
+  },
+  {
+    "commit_hash": "d8e0b9c1",
+    "message": "chore: cleanup webhook handler after code review feedback",
+    "timestamp": "2024-05-02T17:02:31Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-54",
+    "files_changed": 4,
+    "insertions": 130,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "6f6fad4e",
+    "message": "feat(payments): implement idempotency key core logic",
+    "timestamp": "2024-05-07T19:28:52Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-54",
+    "files_changed": 2,
+    "insertions": 31,
+    "deletions": 3
+  },
+  {
+    "commit_hash": "b4d8a105",
+    "message": "style(payments): lint and format fixes in payment event stream",
+    "timestamp": "2024-04-24T09:37:57Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-55",
+    "files_changed": 6,
+    "insertions": 63,
+    "deletions": 52
+  },
+  {
+    "commit_hash": "46a33dbc",
+    "message": "fix(payments): circuit breaker edge case handling",
+    "timestamp": "2024-04-25T15:08:33Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-55",
+    "files_changed": 5,
+    "insertions": 177,
+    "deletions": 38
+  },
+  {
+    "commit_hash": "ee0d447b",
+    "message": "feat(payments): add idempotency key handler",
+    "timestamp": "2024-04-28T00:33:16Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-55",
+    "files_changed": 4,
+    "insertions": 42,
+    "deletions": 44
+  },
+  {
+    "commit_hash": "b6c892e3",
+    "message": "test(payments): integration test for payment retry happy path",
+    "timestamp": "2024-04-30T06:04:59Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-55",
+    "files_changed": 4,
+    "insertions": 46,
+    "deletions": 29
+  },
+  {
+    "commit_hash": "6790429b",
+    "message": "chore: setup payment retry module boilerplate",
+    "timestamp": "2024-04-30T12:00:52Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-55",
+    "files_changed": 5,
+    "insertions": 167,
+    "deletions": 31
+  },
+  {
+    "commit_hash": "00dc3333",
+    "message": "chore: setup dispute workflow module boilerplate",
+    "timestamp": "2024-04-26T23:37:36Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-56",
+    "files_changed": 6,
+    "insertions": 78,
+    "deletions": 42
+  },
+  {
+    "commit_hash": "ecc9aaba",
+    "message": "test: add edge case coverage for refund logic",
+    "timestamp": "2024-04-27T06:51:49Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-56",
+    "files_changed": 5,
+    "insertions": 202,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "9fd5baa7",
+    "message": "docs(payments): add inline docs for dispute workflow",
+    "timestamp": "2024-04-30T01:54:57Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-56",
+    "files_changed": 7,
+    "insertions": 224,
+    "deletions": 11
+  },
+  {
+    "commit_hash": "47ad618a",
+    "message": "feat(payments): circuit breaker with error handling and logging",
+    "timestamp": "2024-04-30T03:26:33Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-56",
+    "files_changed": 7,
+    "insertions": 206,
+    "deletions": 74
+  },
+  {
+    "commit_hash": "ea904c4f",
+    "message": "feat(payments): wire dispute workflow into existing service layer",
+    "timestamp": "2024-05-01T05:30:14Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-56",
+    "files_changed": 4,
+    "insertions": 32,
+    "deletions": 44
+  },
+  {
+    "commit_hash": "a75454af",
+    "message": "fix(payments): handle null/missing fields in dispute workflow",
+    "timestamp": "2024-05-02T20:33:07Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-56",
+    "files_changed": 8,
+    "insertions": 204,
+    "deletions": 58
+  },
+  {
+    "commit_hash": "b8efea33",
+    "message": "chore: setup refund logic module boilerplate",
+    "timestamp": "2024-05-02T04:25:44Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-57",
+    "files_changed": 7,
+    "insertions": 108,
+    "deletions": 44
+  },
+  {
+    "commit_hash": "6d2f5fef",
+    "message": "fix(payments): handle null/missing fields in webhook handler",
+    "timestamp": "2024-05-02T10:53:56Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-57",
+    "files_changed": 7,
+    "insertions": 287,
+    "deletions": 51
+  },
+  {
+    "commit_hash": "5f5073c9",
+    "message": "test(payments): webhook handler \u2014 happy path and error scenarios",
+    "timestamp": "2024-05-09T16:27:12Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-57",
+    "files_changed": 5,
+    "insertions": 62,
+    "deletions": 56
+  },
+  {
+    "commit_hash": "a6f60350",
+    "message": "refactor: finalize circuit breaker public API surface",
+    "timestamp": "2024-05-10T12:42:33Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-57",
+    "files_changed": 4,
+    "insertions": 62,
+    "deletions": 40
+  },
+  {
+    "commit_hash": "9710a997",
+    "message": "feat(payments): charge flow with error handling and logging",
+    "timestamp": "2024-05-10T13:32:52Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-57",
+    "files_changed": 6,
+    "insertions": 186,
+    "deletions": 38
+  },
+  {
+    "commit_hash": "18410f78",
+    "message": "WIP: start amount validation implementation",
+    "timestamp": "2024-05-01T08:57:08Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-58",
+    "files_changed": 6,
+    "insertions": 162,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "53fe63b2",
+    "message": "feat(payments): implement subscription renewal core logic",
+    "timestamp": "2024-05-02T15:09:25Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-58",
+    "files_changed": 5,
+    "insertions": 145,
+    "deletions": 56
+  },
+  {
+    "commit_hash": "5a0e480f",
+    "message": "fix(payments): dispute workflow edge case handling",
+    "timestamp": "2024-05-03T13:52:48Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-58",
+    "files_changed": 8,
+    "insertions": 144,
+    "deletions": 26
+  },
+  {
+    "commit_hash": "66872ba4",
+    "message": "feat(payments): complete dispute workflow implementation",
+    "timestamp": "2024-05-03T23:10:57Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-58",
+    "files_changed": 4,
+    "insertions": 42,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "33483b40",
+    "message": "feat(payments): add 3DS handler handler",
+    "timestamp": "2024-05-05T10:20:39Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-59",
+    "files_changed": 3,
+    "insertions": 42,
+    "deletions": 34
+  },
+  {
+    "commit_hash": "dd5a61de",
+    "message": "feat(payments): add payment retry handler",
+    "timestamp": "2024-05-09T15:13:50Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-60",
+    "files_changed": 3,
+    "insertions": 40,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "ef4b5516",
+    "message": "docs(payments): add inline docs for 3DS handler",
+    "timestamp": "2024-05-12T01:12:58Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-60",
+    "files_changed": 4,
+    "insertions": 114,
+    "deletions": 33
+  },
+  {
+    "commit_hash": "218b143f",
+    "message": "WIP: start refund logic implementation",
+    "timestamp": "2024-05-12T03:37:38Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-60",
+    "files_changed": 3,
+    "insertions": 43,
+    "deletions": 34
+  },
+  {
+    "commit_hash": "69ca2650",
+    "message": "WIP: dispute workflow skeleton \u2014 rough implementation",
+    "timestamp": "2024-04-30T19:17:54Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-61",
+    "files_changed": 3,
+    "insertions": 52,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "c554886d",
+    "message": "style(payments): lint and format fixes in idempotency key",
+    "timestamp": "2024-05-02T20:20:42Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-61",
+    "files_changed": 6,
+    "insertions": 108,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "71a0d8bb",
+    "message": "feat(payments): wire charge flow into existing service layer",
+    "timestamp": "2024-05-02T22:21:12Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-61",
+    "files_changed": 6,
+    "insertions": 87,
+    "deletions": 58
+  },
+  {
+    "commit_hash": "7aa2de90",
+    "message": "fix(payments): resolve webhook handler race condition under load",
+    "timestamp": "2024-05-03T03:35:57Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-61",
+    "files_changed": 3,
+    "insertions": 105,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "608dcfae",
+    "message": "WIP: amount validation skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-04T10:34:33Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-62",
+    "files_changed": 3,
+    "insertions": 25,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "5037897a",
+    "message": "style(payments): lint and format fixes in subscription renewal",
+    "timestamp": "2024-05-10T22:39:53Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-62",
+    "files_changed": 4,
+    "insertions": 146,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "b022bb19",
+    "message": "WIP: charge flow initial scaffold",
+    "timestamp": "2024-05-08T00:51:24Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-63",
+    "files_changed": 5,
+    "insertions": 130,
+    "deletions": 43
+  },
+  {
+    "commit_hash": "80ed78e2",
+    "message": "fix: payment event stream off-by-one error in boundary condition",
+    "timestamp": "2024-05-08T23:56:50Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-63",
+    "files_changed": 4,
+    "insertions": 156,
+    "deletions": 4
+  },
+  {
+    "commit_hash": "a95e69b3",
+    "message": "test: add edge case coverage for payment vault",
+    "timestamp": "2024-05-09T05:11:34Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-63",
+    "files_changed": 4,
+    "insertions": 56,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "d35c0aa1",
+    "message": "refactor(payments): extract 3DS handler into dedicated module",
+    "timestamp": "2024-05-09T19:44:10Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-63",
+    "files_changed": 6,
+    "insertions": 126,
+    "deletions": 64
+  },
+  {
+    "commit_hash": "29e8d85b",
+    "message": "chore: cleanup amount validation after code review feedback",
+    "timestamp": "2024-05-09T22:40:08Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-63",
+    "files_changed": 5,
+    "insertions": 180,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "8abc89fb",
+    "message": "WIP: rough dispute workflow draft, untested",
+    "timestamp": "2024-05-05T09:39:39Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-64",
+    "files_changed": 4,
+    "insertions": 74,
+    "deletions": 46
+  },
+  {
+    "commit_hash": "02a3c244",
+    "message": "docs(payments): add inline docs for payment retry",
+    "timestamp": "2024-05-05T20:49:14Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-64",
+    "files_changed": 3,
+    "insertions": 24,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "b3dd73ab",
+    "message": "refactor: finalize circuit breaker public API surface",
+    "timestamp": "2024-05-09T22:46:00Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-65",
+    "files_changed": 4,
+    "insertions": 42,
+    "deletions": 4
+  },
+  {
+    "commit_hash": "b83cc4ae",
+    "message": "chore: setup payment vault module boilerplate",
+    "timestamp": "2024-05-10T20:51:49Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-65",
+    "files_changed": 4,
+    "insertions": 172,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "cad4c81b",
+    "message": "feat(payments): add amount validation handler",
+    "timestamp": "2024-05-06T05:49:00Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-66",
+    "files_changed": 4,
+    "insertions": 112,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "68133553",
+    "message": "fix(payments): resolve payment event stream race condition under load",
+    "timestamp": "2024-05-07T02:46:40Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-66",
+    "files_changed": 3,
+    "insertions": 118,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "7e99fa5e",
+    "message": "style(payments): lint and format fixes in idempotency key",
+    "timestamp": "2024-05-08T21:09:21Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-66",
+    "files_changed": 3,
+    "insertions": 43,
+    "deletions": 25
+  },
+  {
+    "commit_hash": "b10442d0",
+    "message": "WIP: 3DS handler skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-10T03:25:09Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-66",
+    "files_changed": 3,
+    "insertions": 57,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "3deb6d1a",
+    "message": "style(payments): lint and format fixes in payment retry",
+    "timestamp": "2024-05-11T07:40:27Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-67",
+    "files_changed": 1,
+    "insertions": 34,
+    "deletions": 3
+  },
+  {
+    "commit_hash": "4a511fc8",
+    "message": "WIP: dispute workflow initial scaffold",
+    "timestamp": "2024-05-11T18:31:20Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-67",
+    "files_changed": 2,
+    "insertions": 77,
+    "deletions": 3
+  },
+  {
+    "commit_hash": "9346a60a",
+    "message": "WIP: amount validation initial scaffold",
+    "timestamp": "2024-05-11T03:50:38Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-68",
+    "files_changed": 3,
+    "insertions": 129,
+    "deletions": 7
+  },
+  {
+    "commit_hash": "b1e1c41c",
+    "message": "style(payments): lint and format fixes in 3DS handler",
+    "timestamp": "2024-05-16T18:49:40Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-68",
+    "files_changed": 4,
+    "insertions": 46,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "f2aecb5f",
+    "message": "feat(payments): amount validation with error handling and logging",
+    "timestamp": "2024-05-09T15:43:26Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-69",
+    "files_changed": 7,
+    "insertions": 294,
+    "deletions": 49
+  },
+  {
+    "commit_hash": "f5a34137",
+    "message": "refactor: finalize circuit breaker public API surface",
+    "timestamp": "2024-05-17T01:01:05Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-70",
+    "files_changed": 3,
+    "insertions": 60,
+    "deletions": 34
+  },
+  {
+    "commit_hash": "a90cf8a1",
+    "message": "feat(payments): implement dispute workflow core logic",
+    "timestamp": "2024-05-17T01:36:58Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-70",
+    "files_changed": 4,
+    "insertions": 58,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "4be56a82",
+    "message": "WIP: rough charge flow draft, untested",
+    "timestamp": "2024-05-21T05:47:17Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-70",
+    "files_changed": 6,
+    "insertions": 249,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "cba45a57",
+    "message": "WIP: start 3DS handler implementation",
+    "timestamp": "2024-05-13T01:07:11Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-71",
+    "files_changed": 2,
+    "insertions": 55,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "29dd284e",
+    "message": "feat(payments): complete idempotency key implementation",
+    "timestamp": "2024-05-20T09:40:02Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-71",
+    "files_changed": 3,
+    "insertions": 115,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "8f7c53cb",
+    "message": "WIP: refund logic skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-14T13:58:15Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-72",
+    "files_changed": 3,
+    "insertions": 127,
+    "deletions": 19
+  },
+  {
+    "commit_hash": "1fa4b996",
+    "message": "test: add edge case coverage for payment vault",
+    "timestamp": "2024-05-17T12:25:28Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-72",
+    "files_changed": 3,
+    "insertions": 30,
+    "deletions": 23
+  },
+  {
+    "commit_hash": "8adc9287",
+    "message": "feat(payments): webhook handler with error handling and logging",
+    "timestamp": "2024-05-17T15:21:14Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-72",
+    "files_changed": 3,
+    "insertions": 97,
+    "deletions": 26
+  },
+  {
+    "commit_hash": "0c343a8c",
+    "message": "fix: correct payment vault response format to match spec",
+    "timestamp": "2024-05-18T20:48:17Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-72",
+    "files_changed": 4,
+    "insertions": 152,
+    "deletions": 33
+  },
+  {
+    "commit_hash": "6e85d779",
+    "message": "chore: cleanup amount validation after code review feedback",
+    "timestamp": "2024-05-19T03:10:25Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-72",
+    "files_changed": 3,
+    "insertions": 121,
+    "deletions": 19
+  },
+  {
+    "commit_hash": "32928e22",
+    "message": "feat(payments): webhook handler with error handling and logging",
+    "timestamp": "2024-05-14T13:22:19Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-73",
+    "files_changed": 4,
+    "insertions": 134,
+    "deletions": 5
+  },
+  {
+    "commit_hash": "39773629",
+    "message": "refactor: finalize webhook handler public API surface",
+    "timestamp": "2024-05-16T22:05:51Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-73",
+    "files_changed": 3,
+    "insertions": 76,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "25b13cb7",
+    "message": "chore: setup 3DS handler module boilerplate",
+    "timestamp": "2024-05-19T19:25:34Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-73",
+    "files_changed": 5,
+    "insertions": 105,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "6208ead9",
+    "message": "chore: setup webhook handler module boilerplate",
+    "timestamp": "2024-05-14T19:26:17Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-74",
+    "files_changed": 4,
+    "insertions": 46,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "c1ae80fa",
+    "message": "refactor: finalize payment vault public API surface",
+    "timestamp": "2024-05-14T20:45:52Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-74",
+    "files_changed": 4,
+    "insertions": 38,
+    "deletions": 46
+  },
+  {
+    "commit_hash": "0b08863c",
+    "message": "docs(payments): add inline docs for payment vault",
+    "timestamp": "2024-05-20T19:33:58Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-75",
+    "files_changed": 2,
+    "insertions": 47,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "9bcb1273",
+    "message": "WIP: start idempotency key implementation",
+    "timestamp": "2024-05-21T20:20:01Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-75",
+    "files_changed": 2,
+    "insertions": 63,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "98b9fda7",
+    "message": "refactor: finalize charge flow public API surface",
+    "timestamp": "2024-05-20T05:49:41Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-76",
+    "files_changed": 3,
+    "insertions": 96,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "2f012e61",
+    "message": "fix(payments): handle null/missing fields in charge flow",
+    "timestamp": "2024-05-21T13:00:59Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-76",
+    "files_changed": 6,
+    "insertions": 174,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "9f638828",
+    "message": "WIP: start 3DS handler implementation",
+    "timestamp": "2024-05-22T14:15:27Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-76",
+    "files_changed": 6,
+    "insertions": 261,
+    "deletions": 52
+  },
+  {
+    "commit_hash": "c62d13cf",
+    "message": "feat(payments): add idempotency key handler",
+    "timestamp": "2024-05-22T23:58:51Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-76",
+    "files_changed": 5,
+    "insertions": 220,
+    "deletions": 41
+  },
+  {
+    "commit_hash": "5d3f7602",
+    "message": "feat(payments): implement amount validation core logic",
+    "timestamp": "2024-05-16T13:07:52Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-77",
+    "files_changed": 5,
+    "insertions": 215,
+    "deletions": 41
+  },
+  {
+    "commit_hash": "af146a63",
+    "message": "WIP: payment retry initial scaffold",
+    "timestamp": "2024-05-17T00:40:57Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-77",
+    "files_changed": 3,
+    "insertions": 91,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "51848c47",
+    "message": "refactor: finalize payment vault public API surface",
+    "timestamp": "2024-05-19T09:21:23Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-77",
+    "files_changed": 3,
+    "insertions": 118,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "6b582539",
+    "message": "chore: cleanup webhook handler after code review feedback",
+    "timestamp": "2024-05-22T09:35:17Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-78",
+    "files_changed": 2,
+    "insertions": 51,
+    "deletions": 5
+  },
+  {
+    "commit_hash": "46c3bc65",
+    "message": "WIP: amount validation initial scaffold",
+    "timestamp": "2024-05-22T21:21:56Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-78",
+    "files_changed": 2,
+    "insertions": 76,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "7886a2fb",
+    "message": "docs(payments): add inline docs for 3DS handler",
+    "timestamp": "2024-05-22T18:40:37Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-79",
+    "files_changed": 3,
+    "insertions": 123,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "d5c11f70",
+    "message": "WIP: amount validation initial scaffold",
+    "timestamp": "2024-05-23T06:06:51Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-79",
+    "files_changed": 4,
+    "insertions": 80,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "7fed7fe4",
+    "message": "feat(payments): charge flow with error handling and logging",
+    "timestamp": "2024-05-27T03:30:01Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-79",
+    "files_changed": 6,
+    "insertions": 186,
+    "deletions": 46
+  },
+  {
+    "commit_hash": "df39a2c5",
+    "message": "refactor: finalize dispute workflow public API surface",
+    "timestamp": "2024-05-22T05:46:38Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-80",
+    "files_changed": 7,
+    "insertions": 105,
+    "deletions": 58
+  },
+  {
+    "commit_hash": "0d7a7558",
+    "message": "test: add edge case coverage for refund logic",
+    "timestamp": "2024-05-22T13:53:46Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-80",
+    "files_changed": 7,
+    "insertions": 94,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "27fd8bc4",
+    "message": "fix(payments): resolve amount validation race condition under load",
+    "timestamp": "2024-05-23T18:28:48Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-80",
+    "files_changed": 5,
+    "insertions": 187,
+    "deletions": 5
+  },
+  {
+    "commit_hash": "79fadbc8",
+    "message": "feat(payments): add payment vault handler",
+    "timestamp": "2024-05-26T12:26:34Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-80",
+    "files_changed": 6,
+    "insertions": 198,
+    "deletions": 40
+  },
+  {
+    "commit_hash": "94837957",
+    "message": "chore: setup charge flow module boilerplate",
+    "timestamp": "2024-05-29T01:13:51Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-80",
+    "files_changed": 4,
+    "insertions": 112,
+    "deletions": 34
+  },
+  {
+    "commit_hash": "696e155a",
+    "message": "WIP: start subscription renewal implementation",
+    "timestamp": "2024-05-25T15:04:39Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-81",
+    "files_changed": 4,
+    "insertions": 72,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "cfb872d2",
+    "message": "docs(payments): add inline docs for charge flow",
+    "timestamp": "2024-05-27T08:19:52Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-81",
+    "files_changed": 6,
+    "insertions": 147,
+    "deletions": 62
+  },
+  {
+    "commit_hash": "06c142ae",
+    "message": "WIP: refund logic skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-22T13:54:57Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-82",
+    "files_changed": 3,
+    "insertions": 112,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "2d0ad57f",
+    "message": "feat(payments): wire amount validation into existing service layer",
+    "timestamp": "2024-05-23T12:01:47Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-82",
+    "files_changed": 5,
+    "insertions": 177,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "97be6a8e",
+    "message": "refactor: finalize 3DS handler public API surface",
+    "timestamp": "2024-05-25T07:53:15Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-82",
+    "files_changed": 6,
+    "insertions": 96,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "c83e63ba",
+    "message": "chore: cleanup payment vault after code review feedback",
+    "timestamp": "2024-05-22T02:39:36Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-83",
+    "files_changed": 3,
+    "insertions": 78,
+    "deletions": 17
+  },
+  {
+    "commit_hash": "08c248b7",
+    "message": "WIP: start 3DS handler implementation",
+    "timestamp": "2024-05-27T00:03:47Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-83",
+    "files_changed": 3,
+    "insertions": 51,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "214bb327",
+    "message": "refactor(payments): extract circuit breaker into dedicated module",
+    "timestamp": "2024-05-26T05:38:57Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-84",
+    "files_changed": 5,
+    "insertions": 52,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "fb6f3f3b",
+    "message": "test(payments): integration test for idempotency key happy path",
+    "timestamp": "2024-05-29T00:50:27Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-84",
+    "files_changed": 7,
+    "insertions": 56,
+    "deletions": 23
+  },
+  {
+    "commit_hash": "b01c2468",
+    "message": "fix: webhook handler off-by-one error in boundary condition",
+    "timestamp": "2024-05-29T18:45:11Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-84",
+    "files_changed": 7,
+    "insertions": 217,
+    "deletions": 74
+  },
+  {
+    "commit_hash": "2bb81745",
+    "message": "chore: cleanup payment retry after code review feedback",
+    "timestamp": "2024-05-31T17:43:13Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-84",
+    "files_changed": 7,
+    "insertions": 189,
+    "deletions": 53
+  },
+  {
+    "commit_hash": "6d24a949",
+    "message": "WIP: start charge flow implementation",
+    "timestamp": "2024-06-02T10:36:43Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-84",
+    "files_changed": 6,
+    "insertions": 153,
+    "deletions": 40
+  },
+  {
+    "commit_hash": "63f9bb2c",
+    "message": "feat(payments): add charge flow handler",
+    "timestamp": "2024-05-24T02:11:39Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-85",
+    "files_changed": 1,
+    "insertions": 25,
+    "deletions": 3
+  },
+  {
+    "commit_hash": "23fccc73",
+    "message": "chore: setup subscription renewal module boilerplate",
+    "timestamp": "2024-05-30T08:42:19Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-86",
+    "files_changed": 5,
+    "insertions": 85,
+    "deletions": 15
+  },
+  {
+    "commit_hash": "0f20130a",
+    "message": "style(payments): lint and format fixes in payment vault",
+    "timestamp": "2024-05-30T16:05:15Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-86",
+    "files_changed": 3,
+    "insertions": 121,
+    "deletions": 7
+  },
+  {
+    "commit_hash": "774b325b",
+    "message": "feat(payments): refund logic with error handling and logging",
+    "timestamp": "2024-06-01T04:09:42Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-86",
+    "files_changed": 4,
+    "insertions": 94,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "7d87c8be",
+    "message": "fix(payments): handle null/missing fields in payment event stream",
+    "timestamp": "2024-06-02T08:45:28Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-86",
+    "files_changed": 4,
+    "insertions": 46,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "a8687895",
+    "message": "test: add edge case coverage for dispute workflow",
+    "timestamp": "2024-06-02T18:19:22Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-86",
+    "files_changed": 4,
+    "insertions": 112,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "88bc9ab6",
+    "message": "fix: idempotency key off-by-one error in boundary condition",
+    "timestamp": "2024-06-03T23:19:44Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-87",
+    "files_changed": 4,
+    "insertions": 174,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "aed7a5be",
+    "message": "WIP: circuit breaker initial scaffold",
+    "timestamp": "2024-06-04T17:05:15Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-87",
+    "files_changed": 3,
+    "insertions": 24,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "8a89ee8f",
+    "message": "style(payments): lint and format fixes in circuit breaker",
+    "timestamp": "2024-06-05T14:49:16Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-87",
+    "files_changed": 4,
+    "insertions": 170,
+    "deletions": 37
+  },
+  {
+    "commit_hash": "bd138136",
+    "message": "feat(payments): charge flow with error handling and logging",
+    "timestamp": "2024-06-05T23:54:12Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-87",
+    "files_changed": 5,
+    "insertions": 205,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "0db488e2",
+    "message": "refactor(payments): extract payment retry into dedicated module",
+    "timestamp": "2024-06-04T15:28:42Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-88",
+    "files_changed": 2,
+    "insertions": 42,
+    "deletions": 15
+  },
+  {
+    "commit_hash": "593c16eb",
+    "message": "docs(payments): add inline docs for subscription renewal",
+    "timestamp": "2024-06-05T07:35:32Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-88",
+    "files_changed": 2,
+    "insertions": 32,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "57f00402",
+    "message": "WIP: refund logic initial scaffold",
+    "timestamp": "2024-06-07T14:55:30Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-88",
+    "files_changed": 2,
+    "insertions": 63,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "8595b2af",
+    "message": "feat(payments): 3DS handler with error handling and logging",
+    "timestamp": "2024-05-31T03:19:49Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-89",
+    "files_changed": 6,
+    "insertions": 63,
+    "deletions": 44
+  },
+  {
+    "commit_hash": "46219061",
+    "message": "fix: correct amount validation response format to match spec",
+    "timestamp": "2024-06-06T23:33:18Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-89",
+    "files_changed": 3,
+    "insertions": 64,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "10c5d6dd",
+    "message": "WIP: rough charge flow draft, untested",
+    "timestamp": "2024-06-07T19:04:12Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-89",
+    "files_changed": 5,
+    "insertions": 47,
+    "deletions": 45
+  },
+  {
+    "commit_hash": "87a39b31",
+    "message": "docs(payments): add inline docs for payment vault",
+    "timestamp": "2024-06-09T09:23:34Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-89",
+    "files_changed": 4,
+    "insertions": 64,
+    "deletions": 44
+  },
+  {
+    "commit_hash": "973a7790",
+    "message": "feat(search): wire search analytics into existing service layer",
+    "timestamp": "2024-05-11T13:35:21Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-91",
+    "files_changed": 6,
+    "insertions": 234,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "2a0dad4e",
+    "message": "feat(search): complete search query implementation",
+    "timestamp": "2024-05-13T12:31:11Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-91",
+    "files_changed": 4,
+    "insertions": 42,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "4c7a1239",
+    "message": "WIP: ranking algorithm initial scaffold",
+    "timestamp": "2024-05-15T08:01:59Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-91",
+    "files_changed": 3,
+    "insertions": 102,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "1d563309",
+    "message": "refactor: finalize synonym expansion public API surface",
+    "timestamp": "2024-05-05T18:54:39Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-92",
+    "files_changed": 3,
+    "insertions": 112,
+    "deletions": 11
+  },
+  {
+    "commit_hash": "fb50c5ed",
+    "message": "WIP: rough search filter draft, untested",
+    "timestamp": "2024-05-13T00:30:29Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-92",
+    "files_changed": 4,
+    "insertions": 176,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "a1dcf658",
+    "message": "feat(search): add synonym expansion handler",
+    "timestamp": "2024-05-04T00:27:37Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-93",
+    "files_changed": 4,
+    "insertions": 36,
+    "deletions": 42
+  },
+  {
+    "commit_hash": "c4850a5b",
+    "message": "feat(search): implement fuzzy match core logic",
+    "timestamp": "2024-05-04T03:17:26Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-93",
+    "files_changed": 5,
+    "insertions": 127,
+    "deletions": 31
+  },
+  {
+    "commit_hash": "e770227d",
+    "message": "fix: correct autocomplete response format to match spec",
+    "timestamp": "2024-05-06T03:09:20Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-93",
+    "files_changed": 5,
+    "insertions": 142,
+    "deletions": 40
+  },
+  {
+    "commit_hash": "ad969dcb",
+    "message": "feat(search): complete autocomplete implementation",
+    "timestamp": "2024-05-07T09:41:23Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-93",
+    "files_changed": 4,
+    "insertions": 116,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "e97b7ce3",
+    "message": "WIP: ranking algorithm skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-07T20:11:02Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-93",
+    "files_changed": 6,
+    "insertions": 246,
+    "deletions": 50
+  },
+  {
+    "commit_hash": "9a8095ec",
+    "message": "test(search): integration test for GIN index happy path",
+    "timestamp": "2024-05-09T00:34:21Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-93",
+    "files_changed": 4,
+    "insertions": 162,
+    "deletions": 29
+  },
+  {
+    "commit_hash": "c2ddfa2b",
+    "message": "refactor(search): extract result pagination into dedicated module",
+    "timestamp": "2024-05-10T03:42:05Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-94",
+    "files_changed": 5,
+    "insertions": 190,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "8250318c",
+    "message": "WIP: search analytics skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-11T06:06:56Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-94",
+    "files_changed": 6,
+    "insertions": 159,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "ea91708a",
+    "message": "feat(search): complete ranking algorithm implementation",
+    "timestamp": "2024-05-12T04:04:19Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-94",
+    "files_changed": 3,
+    "insertions": 22,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "ca421f81",
+    "message": "WIP: start search analytics implementation",
+    "timestamp": "2024-05-08T17:44:03Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-95",
+    "files_changed": 6,
+    "insertions": 249,
+    "deletions": 46
+  },
+  {
+    "commit_hash": "d9e6bace",
+    "message": "style(search): lint and format fixes in result pagination",
+    "timestamp": "2024-05-09T20:31:41Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-95",
+    "files_changed": 5,
+    "insertions": 107,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "fc924e80",
+    "message": "refactor(search): extract search query into dedicated module",
+    "timestamp": "2024-05-10T08:00:25Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-95",
+    "files_changed": 6,
+    "insertions": 147,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "fc72de77",
+    "message": "test(search): synonym expansion \u2014 happy path and error scenarios",
+    "timestamp": "2024-05-11T23:02:55Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-95",
+    "files_changed": 5,
+    "insertions": 207,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "06299db9",
+    "message": "fix(search): handle null/missing fields in ranking algorithm",
+    "timestamp": "2024-05-12T11:33:05Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-95",
+    "files_changed": 4,
+    "insertions": 56,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "9a9d5a03",
+    "message": "refactor: finalize tsvector index public API surface",
+    "timestamp": "2024-05-08T01:39:25Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-96",
+    "files_changed": 6,
+    "insertions": 198,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "332713b6",
+    "message": "feat(search): search filter with error handling and logging",
+    "timestamp": "2024-05-09T19:08:03Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-96",
+    "files_changed": 7,
+    "insertions": 315,
+    "deletions": 67
+  },
+  {
+    "commit_hash": "c921dc5a",
+    "message": "WIP: rough ranking algorithm draft, untested",
+    "timestamp": "2024-05-09T21:42:31Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-96",
+    "files_changed": 7,
+    "insertions": 126,
+    "deletions": 49
+  },
+  {
+    "commit_hash": "2abbd195",
+    "message": "fix: correct GIN index response format to match spec",
+    "timestamp": "2024-05-11T18:39:45Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-96",
+    "files_changed": 6,
+    "insertions": 252,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "976d6360",
+    "message": "chore: cleanup result pagination after code review feedback",
+    "timestamp": "2024-05-11T19:59:02Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-97",
+    "files_changed": 7,
+    "insertions": 255,
+    "deletions": 70
+  },
+  {
+    "commit_hash": "4d20a2ea",
+    "message": "test(search): add unit tests for tsvector index",
+    "timestamp": "2024-05-13T08:00:38Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-97",
+    "files_changed": 6,
+    "insertions": 204,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "3a59e4f6",
+    "message": "WIP: autocomplete initial scaffold",
+    "timestamp": "2024-05-14T05:22:11Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-97",
+    "files_changed": 6,
+    "insertions": 192,
+    "deletions": 62
+  },
+  {
+    "commit_hash": "dd0ef08f",
+    "message": "feat(search): wire GIN index into existing service layer",
+    "timestamp": "2024-05-14T12:51:56Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-97",
+    "files_changed": 4,
+    "insertions": 160,
+    "deletions": 37
+  },
+  {
+    "commit_hash": "b65668a7",
+    "message": "fix(search): resolve cache layer race condition under load",
+    "timestamp": "2024-05-16T06:04:25Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-97",
+    "files_changed": 4,
+    "insertions": 90,
+    "deletions": 40
+  },
+  {
+    "commit_hash": "9f1b8dc4",
+    "message": "WIP: search analytics initial scaffold",
+    "timestamp": "2024-05-13T11:01:44Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-98",
+    "files_changed": 6,
+    "insertions": 186,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "012927c4",
+    "message": "chore: cleanup geo-proximity after code review feedback",
+    "timestamp": "2024-05-14T14:36:16Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-98",
+    "files_changed": 5,
+    "insertions": 125,
+    "deletions": 31
+  },
+  {
+    "commit_hash": "9a4b0721",
+    "message": "test: add edge case coverage for ranking algorithm",
+    "timestamp": "2024-05-16T03:51:34Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-98",
+    "files_changed": 3,
+    "insertions": 112,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "955f42b9",
+    "message": "fix(search): resolve ranking algorithm race condition under load",
+    "timestamp": "2024-05-18T16:34:04Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-98",
+    "files_changed": 6,
+    "insertions": 240,
+    "deletions": 66
+  },
+  {
+    "commit_hash": "aaaa899e",
+    "message": "feat(search): implement search analytics core logic",
+    "timestamp": "2024-05-19T08:26:19Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-98",
+    "files_changed": 3,
+    "insertions": 69,
+    "deletions": 33
+  },
+  {
+    "commit_hash": "c66ab29d",
+    "message": "WIP: start search query implementation",
+    "timestamp": "2024-05-12T00:35:01Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-99",
+    "files_changed": 4,
+    "insertions": 68,
+    "deletions": 45
+  },
+  {
+    "commit_hash": "e7afa0ea",
+    "message": "fix(search): resolve search filter race condition under load",
+    "timestamp": "2024-05-17T10:30:08Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-99",
+    "files_changed": 6,
+    "insertions": 48,
+    "deletions": 42
+  },
+  {
+    "commit_hash": "41a6cbb9",
+    "message": "test: add edge case coverage for cache layer",
+    "timestamp": "2024-05-18T21:55:40Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-99",
+    "files_changed": 5,
+    "insertions": 142,
+    "deletions": 33
+  },
+  {
+    "commit_hash": "ad011734",
+    "message": "feat(search): complete cache layer implementation",
+    "timestamp": "2024-05-19T05:23:58Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-99",
+    "files_changed": 4,
+    "insertions": 110,
+    "deletions": 4
+  },
+  {
+    "commit_hash": "777fe3a6",
+    "message": "feat(search): add ranking algorithm handler",
+    "timestamp": "2024-05-20T04:03:02Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-99",
+    "files_changed": 3,
+    "insertions": 31,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "77e9272c",
+    "message": "refactor: finalize cache layer public API surface",
+    "timestamp": "2024-05-15T08:44:48Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-100",
+    "files_changed": 5,
+    "insertions": 120,
+    "deletions": 23
+  },
+  {
+    "commit_hash": "cbac4c40",
+    "message": "feat(search): wire search filter into existing service layer",
+    "timestamp": "2024-05-17T20:00:19Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-100",
+    "files_changed": 3,
+    "insertions": 109,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "d2ae9feb",
+    "message": "WIP: start ranking algorithm implementation",
+    "timestamp": "2024-05-18T20:55:39Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-100",
+    "files_changed": 3,
+    "insertions": 45,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "c07a0062",
+    "message": "chore: setup autocomplete module boilerplate",
+    "timestamp": "2024-05-14T10:09:14Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-101",
+    "files_changed": 2,
+    "insertions": 24,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "a6af18f1",
+    "message": "docs(search): add inline docs for result pagination",
+    "timestamp": "2024-05-20T21:13:18Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-101",
+    "files_changed": 4,
+    "insertions": 120,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "76bc136b",
+    "message": "feat(search): implement result pagination core logic",
+    "timestamp": "2024-05-20T23:22:33Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-101",
+    "files_changed": 2,
+    "insertions": 80,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "d19d1d19",
+    "message": "test(search): integration test for fuzzy match happy path",
+    "timestamp": "2024-05-14T02:05:31Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-102",
+    "files_changed": 4,
+    "insertions": 42,
+    "deletions": 29
+  },
+  {
+    "commit_hash": "cfa5f92d",
+    "message": "feat(search): complete cache layer implementation",
+    "timestamp": "2024-05-14T09:11:27Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-102",
+    "files_changed": 4,
+    "insertions": 138,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "a51ab23b",
+    "message": "WIP: fuzzy match skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-15T03:49:00Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-102",
+    "files_changed": 5,
+    "insertions": 160,
+    "deletions": 15
+  },
+  {
+    "commit_hash": "b31b70e9",
+    "message": "fix: cache layer off-by-one error in boundary condition",
+    "timestamp": "2024-05-15T06:49:40Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-102",
+    "files_changed": 6,
+    "insertions": 249,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "7fcf055b",
+    "message": "feat(search): implement search filter core logic",
+    "timestamp": "2024-05-16T23:14:58Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-102",
+    "files_changed": 6,
+    "insertions": 69,
+    "deletions": 44
+  },
+  {
+    "commit_hash": "eb94bc72",
+    "message": "feat(search): wire tsvector index into existing service layer",
+    "timestamp": "2024-05-17T02:56:20Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-103",
+    "files_changed": 2,
+    "insertions": 15,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "87e01d9c",
+    "message": "chore: setup search query module boilerplate",
+    "timestamp": "2024-05-17T05:08:32Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-103",
+    "files_changed": 3,
+    "insertions": 54,
+    "deletions": 26
+  },
+  {
+    "commit_hash": "f9027fac",
+    "message": "style(search): lint and format fixes in autocomplete",
+    "timestamp": "2024-05-17T19:02:42Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-103",
+    "files_changed": 3,
+    "insertions": 100,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "3ca43caf",
+    "message": "chore: setup result pagination module boilerplate",
+    "timestamp": "2024-05-16T13:56:05Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-104",
+    "files_changed": 5,
+    "insertions": 210,
+    "deletions": 58
+  },
+  {
+    "commit_hash": "1eb953a5",
+    "message": "docs(search): add inline docs for GIN index",
+    "timestamp": "2024-05-16T23:01:01Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-104",
+    "files_changed": 3,
+    "insertions": 115,
+    "deletions": 35
+  },
+  {
+    "commit_hash": "a465cc0b",
+    "message": "feat(search): add search analytics handler",
+    "timestamp": "2024-05-17T01:40:44Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-104",
+    "files_changed": 4,
+    "insertions": 40,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "90639257",
+    "message": "WIP: start cache layer implementation",
+    "timestamp": "2024-05-21T03:20:43Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-105",
+    "files_changed": 2,
+    "insertions": 24,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "2b02d725",
+    "message": "refactor: finalize ranking algorithm public API surface",
+    "timestamp": "2024-05-22T23:02:16Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-105",
+    "files_changed": 3,
+    "insertions": 60,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "b6353f0a",
+    "message": "fix: correct tsvector index response format to match spec",
+    "timestamp": "2024-05-17T11:01:37Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-106",
+    "files_changed": 3,
+    "insertions": 129,
+    "deletions": 3
+  },
+  {
+    "commit_hash": "d4bb359e",
+    "message": "WIP: fuzzy match skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-18T11:57:27Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-106",
+    "files_changed": 6,
+    "insertions": 126,
+    "deletions": 66
+  },
+  {
+    "commit_hash": "cd6c57ad",
+    "message": "test(search): GIN index \u2014 happy path and error scenarios",
+    "timestamp": "2024-05-19T11:04:03Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-106",
+    "files_changed": 3,
+    "insertions": 109,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "07c087cd",
+    "message": "refactor(search): extract result pagination into dedicated module",
+    "timestamp": "2024-05-19T11:33:04Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-106",
+    "files_changed": 3,
+    "insertions": 102,
+    "deletions": 5
+  },
+  {
+    "commit_hash": "4cb993a9",
+    "message": "feat(search): complete autocomplete implementation",
+    "timestamp": "2024-05-20T04:35:52Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-106",
+    "files_changed": 5,
+    "insertions": 205,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "5ab8c258",
+    "message": "chore: setup synonym expansion module boilerplate",
+    "timestamp": "2024-05-24T19:46:18Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-107",
+    "files_changed": 4,
+    "insertions": 40,
+    "deletions": 34
+  },
+  {
+    "commit_hash": "5e860578",
+    "message": "style(search): lint and format fixes in GIN index",
+    "timestamp": "2024-05-25T12:29:09Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-107",
+    "files_changed": 4,
+    "insertions": 82,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "62f12122",
+    "message": "WIP: rough cache layer draft, untested",
+    "timestamp": "2024-05-25T06:51:43Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-108",
+    "files_changed": 2,
+    "insertions": 26,
+    "deletions": 5
+  },
+  {
+    "commit_hash": "f8257a41",
+    "message": "refactor: finalize cache layer public API surface",
+    "timestamp": "2024-05-30T14:42:26Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-108",
+    "files_changed": 1,
+    "insertions": 26,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "753baf27",
+    "message": "refactor: finalize tsvector index public API surface",
+    "timestamp": "2024-05-23T08:30:49Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-109",
+    "files_changed": 2,
+    "insertions": 55,
+    "deletions": 7
+  },
+  {
+    "commit_hash": "92822bec",
+    "message": "feat(search): add tsvector index handler",
+    "timestamp": "2024-05-24T01:42:48Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-109",
+    "files_changed": 3,
+    "insertions": 109,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "79e4c354",
+    "message": "WIP: search query skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-24T11:24:00Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-109",
+    "files_changed": 4,
+    "insertions": 164,
+    "deletions": 41
+  },
+  {
+    "commit_hash": "cc31daff",
+    "message": "chore: cleanup search filter after code review feedback",
+    "timestamp": "2024-05-25T04:00:26Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-110",
+    "files_changed": 4,
+    "insertions": 178,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "2f88a4ef",
+    "message": "WIP: fuzzy match skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-27T07:57:42Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-110",
+    "files_changed": 4,
+    "insertions": 146,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "be2846d7",
+    "message": "feat(search): wire GIN index into existing service layer",
+    "timestamp": "2024-05-27T10:13:24Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-110",
+    "files_changed": 6,
+    "insertions": 174,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "6054783e",
+    "message": "chore: setup geo-proximity module boilerplate",
+    "timestamp": "2024-05-23T04:56:57Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-111",
+    "files_changed": 1,
+    "insertions": 34,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "b6d924f8",
+    "message": "feat(search): complete autocomplete implementation",
+    "timestamp": "2024-05-23T08:13:19Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-111",
+    "files_changed": 2,
+    "insertions": 35,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "bc22680d",
+    "message": "WIP: start fuzzy match implementation",
+    "timestamp": "2024-05-24T15:05:31Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-112",
+    "files_changed": 2,
+    "insertions": 86,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "004fd7ae",
+    "message": "chore: cleanup search filter after code review feedback",
+    "timestamp": "2024-05-24T17:59:22Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-112",
+    "files_changed": 4,
+    "insertions": 148,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "9da7b189",
+    "message": "WIP: ranking algorithm skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-30T23:48:20Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-113",
+    "files_changed": 3,
+    "insertions": 91,
+    "deletions": 33
+  },
+  {
+    "commit_hash": "7b505af0",
+    "message": "feat(search): ranking algorithm with error handling and logging",
+    "timestamp": "2024-05-31T12:42:34Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-113",
+    "files_changed": 3,
+    "insertions": 49,
+    "deletions": 23
+  },
+  {
+    "commit_hash": "c21c8dda",
+    "message": "docs(search): add inline docs for ranking algorithm",
+    "timestamp": "2024-05-31T21:03:11Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-113",
+    "files_changed": 3,
+    "insertions": 120,
+    "deletions": 15
+  },
+  {
+    "commit_hash": "575e1233",
+    "message": "WIP: rough search analytics draft, untested",
+    "timestamp": "2024-05-29T00:56:21Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-114",
+    "files_changed": 2,
+    "insertions": 81,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "6e1205b2",
+    "message": "refactor: finalize result pagination public API surface",
+    "timestamp": "2024-05-31T02:13:08Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-114",
+    "files_changed": 4,
+    "insertions": 166,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "c80141ac",
+    "message": "feat(search): GIN index with error handling and logging",
+    "timestamp": "2024-05-25T06:11:31Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-115",
+    "files_changed": 4,
+    "insertions": 56,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "b43f6c10",
+    "message": "chore: setup result pagination module boilerplate",
+    "timestamp": "2024-05-25T17:16:18Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-115",
+    "files_changed": 4,
+    "insertions": 62,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "02b495dc",
+    "message": "fix: fuzzy match off-by-one error in boundary condition",
+    "timestamp": "2024-05-26T05:54:49Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-115",
+    "files_changed": 4,
+    "insertions": 76,
+    "deletions": 33
+  },
+  {
+    "commit_hash": "256331f1",
+    "message": "refactor: finalize GIN index public API surface",
+    "timestamp": "2024-05-27T05:22:12Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-115",
+    "files_changed": 4,
+    "insertions": 142,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "8bf2c0be",
+    "message": "test(search): search analytics \u2014 happy path and error scenarios",
+    "timestamp": "2024-05-28T01:31:57Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-115",
+    "files_changed": 3,
+    "insertions": 40,
+    "deletions": 3
+  },
+  {
+    "commit_hash": "0aa68a16",
+    "message": "feat(search): geo-proximity with error handling and logging",
+    "timestamp": "2024-05-27T20:16:30Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-116",
+    "files_changed": 6,
+    "insertions": 186,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "f59f1db4",
+    "message": "fix(search): resolve geo-proximity race condition under load",
+    "timestamp": "2024-05-28T05:37:43Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-116",
+    "files_changed": 4,
+    "insertions": 46,
+    "deletions": 34
+  },
+  {
+    "commit_hash": "79674c14",
+    "message": "chore: cleanup result pagination after code review feedback",
+    "timestamp": "2024-06-03T04:54:47Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-116",
+    "files_changed": 5,
+    "insertions": 165,
+    "deletions": 41
+  },
+  {
+    "commit_hash": "767bad36",
+    "message": "WIP: search filter skeleton \u2014 rough implementation",
+    "timestamp": "2024-06-04T18:20:15Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-116",
+    "files_changed": 3,
+    "insertions": 37,
+    "deletions": 23
+  },
+  {
+    "commit_hash": "88c80cfe",
+    "message": "style(search): lint and format fixes in GIN index",
+    "timestamp": "2024-05-31T21:22:35Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-118",
+    "files_changed": 4,
+    "insertions": 156,
+    "deletions": 45
+  },
+  {
+    "commit_hash": "6a2911cc",
+    "message": "WIP: result pagination skeleton \u2014 rough implementation",
+    "timestamp": "2024-06-01T12:16:23Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-118",
+    "files_changed": 4,
+    "insertions": 36,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "e2646c97",
+    "message": "WIP: rough search analytics draft, untested",
+    "timestamp": "2024-06-04T02:37:12Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-120",
+    "files_changed": 2,
+    "insertions": 37,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "c9ca66f6",
+    "message": "chore: cleanup search query after code review feedback",
+    "timestamp": "2024-06-04T03:17:07Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-120",
+    "files_changed": 2,
+    "insertions": 61,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "867f95f5",
+    "message": "feat(search): search query with error handling and logging",
+    "timestamp": "2024-06-05T17:40:01Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-120",
+    "files_changed": 3,
+    "insertions": 112,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "1280a686",
+    "message": "chore: setup search query module boilerplate",
+    "timestamp": "2024-06-04T06:11:06Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-121",
+    "files_changed": 4,
+    "insertions": 46,
+    "deletions": 29
+  },
+  {
+    "commit_hash": "9517b37c",
+    "message": "docs(search): add inline docs for synonym expansion",
+    "timestamp": "2024-06-05T18:48:57Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-121",
+    "files_changed": 2,
+    "insertions": 55,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "ea827adf",
+    "message": "fix(search): resolve ranking algorithm race condition under load",
+    "timestamp": "2024-06-05T12:35:35Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-122",
+    "files_changed": 6,
+    "insertions": 255,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "651d84a5",
+    "message": "refactor(search): extract search filter into dedicated module",
+    "timestamp": "2024-06-06T01:03:20Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-122",
+    "files_changed": 5,
+    "insertions": 57,
+    "deletions": 55
+  },
+  {
+    "commit_hash": "40f63b1d",
+    "message": "WIP: rough GIN index draft, untested",
+    "timestamp": "2024-06-07T00:22:25Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-122",
+    "files_changed": 3,
+    "insertions": 124,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "8522a465",
+    "message": "chore: cleanup GIN index after code review feedback",
+    "timestamp": "2024-06-08T21:48:34Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-122",
+    "files_changed": 6,
+    "insertions": 261,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "33d786a0",
+    "message": "feat(search): wire tsvector index into existing service layer",
+    "timestamp": "2024-06-07T22:13:01Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-124",
+    "files_changed": 4,
+    "insertions": 58,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "0e541fea",
+    "message": "chore: setup GIN index module boilerplate",
+    "timestamp": "2024-06-06T01:37:46Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-125",
+    "files_changed": 3,
+    "insertions": 115,
+    "deletions": 4
+  },
+  {
+    "commit_hash": "75f56afe",
+    "message": "docs(search): add inline docs for tsvector index",
+    "timestamp": "2024-06-07T11:28:26Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-125",
+    "files_changed": 5,
+    "insertions": 225,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "dbcbe313",
+    "message": "fix: correct ranking algorithm response format to match spec",
+    "timestamp": "2024-06-08T15:21:19Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-125",
+    "files_changed": 3,
+    "insertions": 82,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "981a9c87",
+    "message": "feat(search): add GIN index handler",
+    "timestamp": "2024-06-10T17:21:28Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-125",
+    "files_changed": 4,
+    "insertions": 90,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "84f5c1dd",
+    "message": "WIP: search filter initial scaffold",
+    "timestamp": "2024-06-09T05:04:10Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-126",
+    "files_changed": 4,
+    "insertions": 90,
+    "deletions": 25
+  },
+  {
+    "commit_hash": "ec4d275c",
+    "message": "refactor(search): extract synonym expansion into dedicated module",
+    "timestamp": "2024-06-11T09:13:52Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-126",
+    "files_changed": 6,
+    "insertions": 159,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "9db700aa",
+    "message": "chore: cleanup synonym expansion after code review feedback",
+    "timestamp": "2024-06-12T01:44:25Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-126",
+    "files_changed": 4,
+    "insertions": 120,
+    "deletions": 38
+  },
+  {
+    "commit_hash": "df76dbed",
+    "message": "fix(search): handle null/missing fields in tsvector index",
+    "timestamp": "2024-06-13T18:57:09Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-126",
+    "files_changed": 4,
+    "insertions": 100,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "ef3b2664",
+    "message": "docs(search): add inline docs for GIN index",
+    "timestamp": "2024-06-08T03:01:10Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-127",
+    "files_changed": 3,
+    "insertions": 129,
+    "deletions": 17
+  },
+  {
+    "commit_hash": "3bca296f",
+    "message": "chore: setup result pagination module boilerplate",
+    "timestamp": "2024-06-11T11:51:29Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-127",
+    "files_changed": 3,
+    "insertions": 43,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "adc362ef",
+    "message": "feat(search): add fuzzy match handler",
+    "timestamp": "2024-06-13T07:12:48Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-127",
+    "files_changed": 4,
+    "insertions": 96,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "2c0f3739",
+    "message": "style(search): lint and format fixes in synonym expansion",
+    "timestamp": "2024-06-14T10:25:12Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-128",
+    "files_changed": 4,
+    "insertions": 78,
+    "deletions": 38
+  },
+  {
+    "commit_hash": "b3dc472d",
+    "message": "WIP: fuzzy match skeleton \u2014 rough implementation",
+    "timestamp": "2024-06-19T04:12:11Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-128",
+    "files_changed": 3,
+    "insertions": 45,
+    "deletions": 17
+  },
+  {
+    "commit_hash": "9465f894",
+    "message": "refactor(search): extract search analytics into dedicated module",
+    "timestamp": "2024-06-13T13:15:22Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-129",
+    "files_changed": 4,
+    "insertions": 94,
+    "deletions": 46
+  },
+  {
+    "commit_hash": "304b6fe0",
+    "message": "refactor: finalize autocomplete public API surface",
+    "timestamp": "2024-06-13T15:30:07Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-129",
+    "files_changed": 5,
+    "insertions": 85,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "582102dd",
+    "message": "fix(search): handle null/missing fields in geo-proximity",
+    "timestamp": "2024-06-17T02:47:32Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-129",
+    "files_changed": 7,
+    "insertions": 108,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "b41053ef",
+    "message": "WIP: rough synonym expansion draft, untested",
+    "timestamp": "2024-06-17T19:47:46Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-129",
+    "files_changed": 5,
+    "insertions": 160,
+    "deletions": 50
+  },
+  {
+    "commit_hash": "862b7f8e",
+    "message": "test(search): synonym expansion \u2014 happy path and error scenarios",
+    "timestamp": "2024-06-18T05:16:17Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-129",
+    "files_changed": 6,
+    "insertions": 144,
+    "deletions": 38
+  },
+  {
+    "commit_hash": "d2284e99",
+    "message": "WIP: rough search query draft, untested",
+    "timestamp": "2024-06-11T09:00:15Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-131",
+    "files_changed": 3,
+    "insertions": 39,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "da7f90fa",
+    "message": "docs(search): add inline docs for result pagination",
+    "timestamp": "2024-06-11T11:11:51Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-131",
+    "files_changed": 2,
+    "insertions": 25,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "37154f15",
+    "message": "feat(search): wire GIN index into existing service layer",
+    "timestamp": "2024-06-12T17:33:48Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-131",
+    "files_changed": 2,
+    "insertions": 68,
+    "deletions": 4
+  },
+  {
+    "commit_hash": "4cbee951",
+    "message": "refactor: finalize autocomplete public API surface",
+    "timestamp": "2024-06-23T20:30:04Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-132",
+    "files_changed": 4,
+    "insertions": 68,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "143c6036",
+    "message": "WIP: start search filter implementation",
+    "timestamp": "2024-06-25T16:28:37Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-132",
+    "files_changed": 2,
+    "insertions": 24,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "cc966057",
+    "message": "WIP: cache layer skeleton \u2014 rough implementation",
+    "timestamp": "2024-06-17T19:33:00Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-133",
+    "files_changed": 4,
+    "insertions": 138,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "e8867bd5",
+    "message": "feat(search): complete fuzzy match implementation",
+    "timestamp": "2024-06-17T21:30:58Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-133",
+    "files_changed": 4,
+    "insertions": 42,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "46e722ed",
+    "message": "refactor(search): extract search analytics into dedicated module",
+    "timestamp": "2024-06-19T19:46:08Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-133",
+    "files_changed": 3,
+    "insertions": 123,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "6060a76a",
+    "message": "refactor: finalize geo-proximity public API surface",
+    "timestamp": "2024-06-16T05:54:38Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-135",
+    "files_changed": 2,
+    "insertions": 48,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "1e497a94",
+    "message": "WIP: tsvector index skeleton \u2014 rough implementation",
+    "timestamp": "2024-06-23T12:59:26Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-135",
+    "files_changed": 2,
+    "insertions": 65,
+    "deletions": 3
+  },
+  {
+    "commit_hash": "183c7266",
+    "message": "WIP: token bucket initial scaffold",
+    "timestamp": "2024-05-20T10:11:32Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-136",
+    "files_changed": 6,
+    "insertions": 243,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "75898647",
+    "message": "refactor(rate-limit): extract distributed counter into dedicated module",
+    "timestamp": "2024-05-21T06:56:21Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-136",
+    "files_changed": 4,
+    "insertions": 150,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "877f88b7",
+    "message": "fix: rate limiter off-by-one error in boundary condition",
+    "timestamp": "2024-05-21T11:38:50Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-136",
+    "files_changed": 6,
+    "insertions": 105,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "15481454",
+    "message": "chore: cleanup rate limiter after code review feedback",
+    "timestamp": "2024-05-21T16:42:25Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-136",
+    "files_changed": 5,
+    "insertions": 75,
+    "deletions": 48
+  },
+  {
+    "commit_hash": "ca2b1996",
+    "message": "feat(rate-limit): wire distributed counter into existing service layer",
+    "timestamp": "2024-05-17T14:41:00Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-137",
+    "files_changed": 5,
+    "insertions": 197,
+    "deletions": 53
+  },
+  {
+    "commit_hash": "f8c80a8f",
+    "message": "fix: rate limit header off-by-one error in boundary condition",
+    "timestamp": "2024-05-18T08:02:54Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-137",
+    "files_changed": 8,
+    "insertions": 336,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "15d699ec",
+    "message": "WIP: rough rate limit config draft, untested",
+    "timestamp": "2024-05-18T14:47:33Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-137",
+    "files_changed": 5,
+    "insertions": 192,
+    "deletions": 5
+  },
+  {
+    "commit_hash": "c960d066",
+    "message": "test: add edge case coverage for violation tracker",
+    "timestamp": "2024-05-18T23:26:41Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-137",
+    "files_changed": 8,
+    "insertions": 284,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "f842c2fa",
+    "message": "refactor: finalize rate limiter public API surface",
+    "timestamp": "2024-05-20T15:16:07Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-137",
+    "files_changed": 6,
+    "insertions": 78,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "adb9cb81",
+    "message": "feat(rate-limit): implement violation tracker core logic",
+    "timestamp": "2024-05-22T13:34:33Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-137",
+    "files_changed": 4,
+    "insertions": 142,
+    "deletions": 26
+  },
+  {
+    "commit_hash": "7d8c2823",
+    "message": "refactor: finalize distributed counter public API surface",
+    "timestamp": "2024-05-17T11:52:20Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-138",
+    "files_changed": 4,
+    "insertions": 106,
+    "deletions": 38
+  },
+  {
+    "commit_hash": "656d13c9",
+    "message": "WIP: rough rate limit config draft, untested",
+    "timestamp": "2024-05-18T08:47:20Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-138",
+    "files_changed": 3,
+    "insertions": 82,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "076763e4",
+    "message": "feat(rate-limit): implement backoff logic core logic",
+    "timestamp": "2024-05-20T13:34:29Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-138",
+    "files_changed": 6,
+    "insertions": 87,
+    "deletions": 40
+  },
+  {
+    "commit_hash": "46128469",
+    "message": "feat(rate-limit): wire sliding window into existing service layer",
+    "timestamp": "2024-05-18T06:37:27Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-139",
+    "files_changed": 4,
+    "insertions": 166,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "e79d65a9",
+    "message": "WIP: start violation tracker implementation",
+    "timestamp": "2024-05-19T18:07:30Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-139",
+    "files_changed": 4,
+    "insertions": 30,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "3f5790ba",
+    "message": "refactor: finalize rate limiter public API surface",
+    "timestamp": "2024-05-21T20:30:11Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-139",
+    "files_changed": 5,
+    "insertions": 180,
+    "deletions": 33
+  },
+  {
+    "commit_hash": "8ca10daa",
+    "message": "chore: setup sliding window module boilerplate",
+    "timestamp": "2024-05-23T16:28:17Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-140",
+    "files_changed": 4,
+    "insertions": 154,
+    "deletions": 37
+  },
+  {
+    "commit_hash": "2cb07e73",
+    "message": "docs(rate-limit): add inline docs for rate limiter",
+    "timestamp": "2024-05-24T12:15:15Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-140",
+    "files_changed": 4,
+    "insertions": 120,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "4eb33d6d",
+    "message": "WIP: rough backoff logic draft, untested",
+    "timestamp": "2024-05-19T10:06:58Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-141",
+    "files_changed": 3,
+    "insertions": 91,
+    "deletions": 5
+  },
+  {
+    "commit_hash": "a9a91214",
+    "message": "chore: cleanup backoff logic after code review feedback",
+    "timestamp": "2024-05-20T23:56:44Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-141",
+    "files_changed": 2,
+    "insertions": 85,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "e3467031",
+    "message": "feat(rate-limit): complete backoff logic implementation",
+    "timestamp": "2024-05-29T15:54:11Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-142",
+    "files_changed": 3,
+    "insertions": 91,
+    "deletions": 5
+  },
+  {
+    "commit_hash": "06aad5d6",
+    "message": "WIP: rough token bucket draft, untested",
+    "timestamp": "2024-05-31T10:58:24Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-142",
+    "files_changed": 3,
+    "insertions": 129,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "a17c9a54",
+    "message": "refactor(rate-limit): extract token bucket into dedicated module",
+    "timestamp": "2024-05-24T23:57:15Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-143",
+    "files_changed": 2,
+    "insertions": 54,
+    "deletions": 4
+  },
+  {
+    "commit_hash": "ce95fc75",
+    "message": "feat(rate-limit): complete IP allowlist implementation",
+    "timestamp": "2024-05-23T01:32:40Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-144",
+    "files_changed": 6,
+    "insertions": 192,
+    "deletions": 64
+  },
+  {
+    "commit_hash": "a91005d1",
+    "message": "WIP: Redis counter initial scaffold",
+    "timestamp": "2024-05-24T10:28:41Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-144",
+    "files_changed": 3,
+    "insertions": 106,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "1a8461c3",
+    "message": "feat(rate-limit): backoff logic with error handling and logging",
+    "timestamp": "2024-05-25T16:21:32Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-144",
+    "files_changed": 3,
+    "insertions": 79,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "fa3137b7",
+    "message": "fix(rate-limit): resolve sliding window race condition under load",
+    "timestamp": "2024-05-26T15:54:19Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-145",
+    "files_changed": 6,
+    "insertions": 177,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "32f51014",
+    "message": "refactor: finalize IP allowlist public API surface",
+    "timestamp": "2024-05-28T21:37:09Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-145",
+    "files_changed": 6,
+    "insertions": 171,
+    "deletions": 54
+  },
+  {
+    "commit_hash": "245509a0",
+    "message": "feat(rate-limit): violation tracker with error handling and logging",
+    "timestamp": "2024-05-31T06:56:59Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-145",
+    "files_changed": 5,
+    "insertions": 135,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "51ee7eab",
+    "message": "test(rate-limit): integration test for rate limit config happy path",
+    "timestamp": "2024-06-01T20:53:15Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-145",
+    "files_changed": 5,
+    "insertions": 132,
+    "deletions": 48
+  },
+  {
+    "commit_hash": "a46b73c0",
+    "message": "WIP: rough rate limit header draft, untested",
+    "timestamp": "2024-06-04T13:56:03Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-145",
+    "files_changed": 4,
+    "insertions": 176,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "8b56aec9",
+    "message": "docs(rate-limit): add inline docs for violation tracker",
+    "timestamp": "2024-05-27T21:02:04Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-146",
+    "files_changed": 4,
+    "insertions": 78,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "b5820de0",
+    "message": "WIP: tier config skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-28T17:22:30Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-146",
+    "files_changed": 4,
+    "insertions": 86,
+    "deletions": 25
+  },
+  {
+    "commit_hash": "43cafffe",
+    "message": "feat(rate-limit): implement token bucket core logic",
+    "timestamp": "2024-05-29T07:11:04Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-146",
+    "files_changed": 3,
+    "insertions": 87,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "317a18ca",
+    "message": "WIP: start violation tracker implementation",
+    "timestamp": "2024-05-29T12:50:01Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-147",
+    "files_changed": 4,
+    "insertions": 178,
+    "deletions": 45
+  },
+  {
+    "commit_hash": "d64e9e58",
+    "message": "feat(rate-limit): complete Redis counter implementation",
+    "timestamp": "2024-05-30T12:21:04Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-147",
+    "files_changed": 2,
+    "insertions": 40,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "55bb746e",
+    "message": "feat(rate-limit): implement backoff logic core logic",
+    "timestamp": "2024-06-03T01:13:27Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-147",
+    "files_changed": 4,
+    "insertions": 148,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "c669a78c",
+    "message": "fix: correct Redis counter response format to match spec",
+    "timestamp": "2024-05-27T02:29:08Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-148",
+    "files_changed": 6,
+    "insertions": 153,
+    "deletions": 50
+  },
+  {
+    "commit_hash": "592f0cd5",
+    "message": "style(rate-limit): lint and format fixes in distributed counter",
+    "timestamp": "2024-05-29T13:02:45Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-148",
+    "files_changed": 7,
+    "insertions": 252,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "3987d51d",
+    "message": "test(rate-limit): distributed counter \u2014 happy path and error scenarios",
+    "timestamp": "2024-05-29T18:17:13Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-148",
+    "files_changed": 5,
+    "insertions": 102,
+    "deletions": 55
+  },
+  {
+    "commit_hash": "4da4bffc",
+    "message": "feat(rate-limit): wire violation tracker into existing service layer",
+    "timestamp": "2024-05-31T01:12:50Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-148",
+    "files_changed": 5,
+    "insertions": 142,
+    "deletions": 31
+  },
+  {
+    "commit_hash": "9676c562",
+    "message": "WIP: start IP allowlist implementation",
+    "timestamp": "2024-06-03T02:05:28Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-148",
+    "files_changed": 4,
+    "insertions": 148,
+    "deletions": 46
+  },
+  {
+    "commit_hash": "48814315",
+    "message": "feat(rate-limit): add violation tracker handler",
+    "timestamp": "2024-06-03T19:58:23Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-148",
+    "files_changed": 4,
+    "insertions": 120,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "e6348750",
+    "message": "fix: correct sliding window response format to match spec",
+    "timestamp": "2024-05-29T03:54:31Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-149",
+    "files_changed": 4,
+    "insertions": 80,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "871fd236",
+    "message": "style(rate-limit): lint and format fixes in tier config",
+    "timestamp": "2024-05-31T08:57:31Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-149",
+    "files_changed": 4,
+    "insertions": 58,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "197e1180",
+    "message": "refactor(rate-limit): extract backoff logic into dedicated module",
+    "timestamp": "2024-06-01T05:50:26Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-149",
+    "files_changed": 6,
+    "insertions": 117,
+    "deletions": 66
+  },
+  {
+    "commit_hash": "ff9ce966",
+    "message": "WIP: distributed counter initial scaffold",
+    "timestamp": "2024-06-02T18:22:33Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-149",
+    "files_changed": 3,
+    "insertions": 48,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "e296f3d4",
+    "message": "fix(rate-limit): resolve tier config race condition under load",
+    "timestamp": "2024-05-29T13:04:35Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-150",
+    "files_changed": 6,
+    "insertions": 219,
+    "deletions": 54
+  },
+  {
+    "commit_hash": "1bb6bd60",
+    "message": "chore: cleanup token bucket after code review feedback",
+    "timestamp": "2024-05-29T15:06:01Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-150",
+    "files_changed": 3,
+    "insertions": 111,
+    "deletions": 4
+  },
+  {
+    "commit_hash": "6c15c8c6",
+    "message": "test: add edge case coverage for Redis counter",
+    "timestamp": "2024-05-29T21:15:17Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-150",
+    "files_changed": 3,
+    "insertions": 63,
+    "deletions": 34
+  },
+  {
+    "commit_hash": "ae5dc6dd",
+    "message": "feat(rate-limit): add distributed counter handler",
+    "timestamp": "2024-05-30T17:57:09Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-150",
+    "files_changed": 3,
+    "insertions": 39,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "0216c8ee",
+    "message": "chore: setup rate limit config module boilerplate",
+    "timestamp": "2024-05-31T04:11:37Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-150",
+    "files_changed": 6,
+    "insertions": 150,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "2530a3bd",
+    "message": "feat(rate-limit): implement violation tracker core logic",
+    "timestamp": "2024-05-27T02:49:29Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-151",
+    "files_changed": 4,
+    "insertions": 32,
+    "deletions": 26
+  },
+  {
+    "commit_hash": "2dd20148",
+    "message": "WIP: distributed counter skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-27T03:00:19Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-151",
+    "files_changed": 4,
+    "insertions": 92,
+    "deletions": 41
+  },
+  {
+    "commit_hash": "00cce531",
+    "message": "feat(rate-limit): complete distributed counter implementation",
+    "timestamp": "2024-05-27T14:13:19Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-151",
+    "files_changed": 4,
+    "insertions": 108,
+    "deletions": 41
+  },
+  {
+    "commit_hash": "49f18fd2",
+    "message": "refactor: finalize token bucket public API surface",
+    "timestamp": "2024-05-29T03:11:58Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-152",
+    "files_changed": 3,
+    "insertions": 63,
+    "deletions": 29
+  },
+  {
+    "commit_hash": "50a033a4",
+    "message": "feat(rate-limit): wire backoff logic into existing service layer",
+    "timestamp": "2024-05-29T16:55:24Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-152",
+    "files_changed": 4,
+    "insertions": 56,
+    "deletions": 33
+  },
+  {
+    "commit_hash": "08d5a9e6",
+    "message": "WIP: distributed counter initial scaffold",
+    "timestamp": "2024-05-31T21:48:49Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-152",
+    "files_changed": 3,
+    "insertions": 54,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "36312736",
+    "message": "feat(rate-limit): implement tier config core logic",
+    "timestamp": "2024-05-30T01:32:40Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-153",
+    "files_changed": 4,
+    "insertions": 60,
+    "deletions": 29
+  },
+  {
+    "commit_hash": "10e78b8b",
+    "message": "WIP: rate limiter skeleton \u2014 rough implementation",
+    "timestamp": "2024-05-30T12:46:01Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-153",
+    "files_changed": 4,
+    "insertions": 110,
+    "deletions": 44
+  },
+  {
+    "commit_hash": "25c0c6dc",
+    "message": "docs(rate-limit): add inline docs for IP allowlist",
+    "timestamp": "2024-05-30T17:20:07Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-153",
+    "files_changed": 4,
+    "insertions": 142,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "1b4b3234",
+    "message": "feat(rate-limit): add rate limit config handler",
+    "timestamp": "2024-05-28T12:38:48Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-154",
+    "files_changed": 4,
+    "insertions": 90,
+    "deletions": 46
+  },
+  {
+    "commit_hash": "6278bcdc",
+    "message": "style(rate-limit): lint and format fixes in rate limiter",
+    "timestamp": "2024-05-28T19:47:46Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-154",
+    "files_changed": 6,
+    "insertions": 75,
+    "deletions": 52
+  },
+  {
+    "commit_hash": "2a17f0ff",
+    "message": "WIP: Redis counter initial scaffold",
+    "timestamp": "2024-05-30T10:21:35Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-154",
+    "files_changed": 4,
+    "insertions": 126,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "44875b3e",
+    "message": "WIP: rate limiter initial scaffold",
+    "timestamp": "2024-05-31T06:23:49Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-155",
+    "files_changed": 2,
+    "insertions": 63,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "eff57a96",
+    "message": "feat(rate-limit): complete rate limiter implementation",
+    "timestamp": "2024-05-31T18:13:47Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-155",
+    "files_changed": 2,
+    "insertions": 77,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "9f239a21",
+    "message": "style(rate-limit): lint and format fixes in token bucket",
+    "timestamp": "2024-06-11T11:09:11Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-156",
+    "files_changed": 4,
+    "insertions": 66,
+    "deletions": 25
+  },
+  {
+    "commit_hash": "ba506637",
+    "message": "WIP: sliding window initial scaffold",
+    "timestamp": "2024-06-12T08:38:55Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-156",
+    "files_changed": 4,
+    "insertions": 118,
+    "deletions": 46
+  },
+  {
+    "commit_hash": "88e9bced",
+    "message": "WIP: rough token bucket draft, untested",
+    "timestamp": "2024-06-03T06:02:14Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-157",
+    "files_changed": 3,
+    "insertions": 70,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "e64fd01b",
+    "message": "style(rate-limit): lint and format fixes in violation tracker",
+    "timestamp": "2024-06-03T12:32:20Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-157",
+    "files_changed": 2,
+    "insertions": 49,
+    "deletions": 10
+  },
+  {
+    "commit_hash": "2f7d202c",
+    "message": "chore: setup rate limit header module boilerplate",
+    "timestamp": "2024-06-02T06:17:34Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-158",
+    "files_changed": 5,
+    "insertions": 100,
+    "deletions": 56
+  },
+  {
+    "commit_hash": "1809fce7",
+    "message": "fix(rate-limit): resolve sliding window race condition under load",
+    "timestamp": "2024-06-03T05:30:05Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-158",
+    "files_changed": 4,
+    "insertions": 178,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "fdfa6055",
+    "message": "test(rate-limit): add unit tests for token bucket",
+    "timestamp": "2024-06-05T05:05:14Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-158",
+    "files_changed": 6,
+    "insertions": 186,
+    "deletions": 48
+  },
+  {
+    "commit_hash": "1111037c",
+    "message": "feat(rate-limit): implement rate limiter core logic",
+    "timestamp": "2024-06-05T08:22:19Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-158",
+    "files_changed": 8,
+    "insertions": 112,
+    "deletions": 34
+  },
+  {
+    "commit_hash": "9d4bd59a",
+    "message": "refactor: finalize rate limit config public API surface",
+    "timestamp": "2024-06-05T13:05:14Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-158",
+    "files_changed": 7,
+    "insertions": 112,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "7832fb1f",
+    "message": "chore: cleanup rate limiter after code review feedback",
+    "timestamp": "2024-06-06T15:57:58Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-159",
+    "files_changed": 4,
+    "insertions": 144,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "a37bc5ff",
+    "message": "WIP: rate limit config initial scaffold",
+    "timestamp": "2024-06-08T16:36:03Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-159",
+    "files_changed": 5,
+    "insertions": 50,
+    "deletions": 38
+  },
+  {
+    "commit_hash": "bdecb071",
+    "message": "feat(rate-limit): tier config with error handling and logging",
+    "timestamp": "2024-06-09T21:52:26Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-159",
+    "files_changed": 6,
+    "insertions": 156,
+    "deletions": 30
+  },
+  {
+    "commit_hash": "9008df55",
+    "message": "chore: cleanup tier config after code review feedback",
+    "timestamp": "2024-06-05T13:23:20Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-160",
+    "files_changed": 2,
+    "insertions": 55,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "c3111beb",
+    "message": "feat(rate-limit): token bucket with error handling and logging",
+    "timestamp": "2024-06-05T13:43:35Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-160",
+    "files_changed": 4,
+    "insertions": 126,
+    "deletions": 40
+  },
+  {
+    "commit_hash": "ea7c539e",
+    "message": "WIP: start token bucket implementation",
+    "timestamp": "2024-06-05T17:20:29Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-160",
+    "files_changed": 4,
+    "insertions": 60,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "4d9a34f0",
+    "message": "feat(rate-limit): add sliding window handler",
+    "timestamp": "2024-06-05T22:37:25Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-161",
+    "files_changed": 5,
+    "insertions": 197,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "fc684b3d",
+    "message": "feat(rate-limit): complete distributed counter implementation",
+    "timestamp": "2024-06-06T09:07:50Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-161",
+    "files_changed": 5,
+    "insertions": 172,
+    "deletions": 55
+  },
+  {
+    "commit_hash": "ecdb4de2",
+    "message": "fix(rate-limit): resolve rate limiter race condition under load",
+    "timestamp": "2024-06-09T00:34:10Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-161",
+    "files_changed": 4,
+    "insertions": 86,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "d43a24bd",
+    "message": "WIP: rough rate limiter draft, untested",
+    "timestamp": "2024-06-09T04:08:03Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-161",
+    "files_changed": 6,
+    "insertions": 165,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "e1f20fa9",
+    "message": "refactor(rate-limit): extract Redis counter into dedicated module",
+    "timestamp": "2024-06-05T05:22:26Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-162",
+    "files_changed": 3,
+    "insertions": 103,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "6492bcfa",
+    "message": "style(rate-limit): lint and format fixes in token bucket",
+    "timestamp": "2024-06-05T08:55:12Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-162",
+    "files_changed": 2,
+    "insertions": 30,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "77e3c3a5",
+    "message": "WIP: backoff logic initial scaffold",
+    "timestamp": "2024-06-05T16:39:29Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-162",
+    "files_changed": 4,
+    "insertions": 70,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "1ae39f7b",
+    "message": "WIP: rough token bucket draft, untested",
+    "timestamp": "2024-06-06T01:41:23Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-163",
+    "files_changed": 3,
+    "insertions": 43,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "a14c114f",
+    "message": "test(rate-limit): Redis counter \u2014 happy path and error scenarios",
+    "timestamp": "2024-06-06T05:42:02Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-163",
+    "files_changed": 4,
+    "insertions": 176,
+    "deletions": 21
+  },
+  {
+    "commit_hash": "425bd86b",
+    "message": "feat(rate-limit): distributed counter with error handling and logging",
+    "timestamp": "2024-06-07T02:22:26Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-163",
+    "files_changed": 6,
+    "insertions": 228,
+    "deletions": 60
+  },
+  {
+    "commit_hash": "c3a1db07",
+    "message": "fix(rate-limit): sliding window edge case handling",
+    "timestamp": "2024-06-09T06:07:16Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-163",
+    "files_changed": 6,
+    "insertions": 69,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "0fe48275",
+    "message": "refactor: finalize sliding window public API surface",
+    "timestamp": "2024-06-09T23:51:05Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-163",
+    "files_changed": 3,
+    "insertions": 69,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "d32894b6",
+    "message": "WIP: start violation tracker implementation",
+    "timestamp": "2024-06-06T05:20:59Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-164",
+    "files_changed": 2,
+    "insertions": 33,
+    "deletions": 14
+  },
+  {
+    "commit_hash": "7faf23a4",
+    "message": "chore: cleanup tier config after code review feedback",
+    "timestamp": "2024-06-07T13:57:48Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-164",
+    "files_changed": 3,
+    "insertions": 52,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "89e2f65b",
+    "message": "fix(rate-limit): resolve violation tracker race condition under load",
+    "timestamp": "2024-06-10T13:54:50Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-165",
+    "files_changed": 5,
+    "insertions": 220,
+    "deletions": 35
+  },
+  {
+    "commit_hash": "1f3fc18e",
+    "message": "refactor(rate-limit): extract backoff logic into dedicated module",
+    "timestamp": "2024-06-10T21:18:38Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-165",
+    "files_changed": 4,
+    "insertions": 100,
+    "deletions": 4
+  },
+  {
+    "commit_hash": "4aba294e",
+    "message": "docs(rate-limit): add inline docs for tier config",
+    "timestamp": "2024-06-13T14:35:50Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-165",
+    "files_changed": 6,
+    "insertions": 228,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "f348a651",
+    "message": "WIP: start sliding window implementation",
+    "timestamp": "2024-06-14T18:43:45Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-165",
+    "files_changed": 6,
+    "insertions": 189,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "2f5addd4",
+    "message": "fix(rate-limit): handle null/missing fields in rate limit config",
+    "timestamp": "2024-06-07T14:49:39Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-167",
+    "files_changed": 7,
+    "insertions": 273,
+    "deletions": 63
+  },
+  {
+    "commit_hash": "aa8103d0",
+    "message": "feat(rate-limit): distributed counter with error handling and logging",
+    "timestamp": "2024-06-08T15:44:15Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-167",
+    "files_changed": 7,
+    "insertions": 273,
+    "deletions": 81
+  },
+  {
+    "commit_hash": "34ead079",
+    "message": "test(rate-limit): add unit tests for rate limit config",
+    "timestamp": "2024-06-10T05:06:51Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-167",
+    "files_changed": 5,
+    "insertions": 37,
+    "deletions": 46
+  },
+  {
+    "commit_hash": "bf20b87d",
+    "message": "feat(rate-limit): distributed counter with error handling and logging",
+    "timestamp": "2024-06-10T19:05:28Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-167",
+    "files_changed": 4,
+    "insertions": 50,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "9fae831d",
+    "message": "feat(rate-limit): wire violation tracker into existing service layer",
+    "timestamp": "2024-06-11T04:30:22Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-167",
+    "files_changed": 5,
+    "insertions": 205,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "415b6063",
+    "message": "refactor: finalize violation tracker public API surface",
+    "timestamp": "2024-06-11T07:37:04Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-167",
+    "files_changed": 4,
+    "insertions": 146,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "4f8be3a1",
+    "message": "chore: setup rate limit header module boilerplate",
+    "timestamp": "2024-06-12T07:51:22Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-167",
+    "files_changed": 6,
+    "insertions": 222,
+    "deletions": 70
+  },
+  {
+    "commit_hash": "5d3306be",
+    "message": "feat(rate-limit): add Redis counter handler",
+    "timestamp": "2024-06-11T10:11:07Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-168",
+    "files_changed": 3,
+    "insertions": 105,
+    "deletions": 3
+  },
+  {
+    "commit_hash": "755e84fa",
+    "message": "WIP: rate limit config skeleton \u2014 rough implementation",
+    "timestamp": "2024-06-11T11:19:57Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-168",
+    "files_changed": 4,
+    "insertions": 94,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "68cb5ce8",
+    "message": "chore: cleanup distributed counter after code review feedback",
+    "timestamp": "2024-06-12T10:54:04Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-168",
+    "files_changed": 4,
+    "insertions": 98,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "cdf3d3bc",
+    "message": "feat(rate-limit): violation tracker with error handling and logging",
+    "timestamp": "2024-06-15T20:25:03Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-169",
+    "files_changed": 4,
+    "insertions": 92,
+    "deletions": 26
+  },
+  {
+    "commit_hash": "320fe691",
+    "message": "style(rate-limit): lint and format fixes in rate limiter",
+    "timestamp": "2024-06-16T04:46:29Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-169",
+    "files_changed": 4,
+    "insertions": 180,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "a5fb647c",
+    "message": "WIP: rough IP allowlist draft, untested",
+    "timestamp": "2024-06-18T04:13:56Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-169",
+    "files_changed": 3,
+    "insertions": 67,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "37e12f54",
+    "message": "feat(rate-limit): implement token bucket core logic",
+    "timestamp": "2024-06-13T05:57:17Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-170",
+    "files_changed": 2,
+    "insertions": 21,
+    "deletions": 15
+  },
+  {
+    "commit_hash": "8a444565",
+    "message": "WIP: rate limiter skeleton \u2014 rough implementation",
+    "timestamp": "2024-06-15T00:57:34Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-170",
+    "files_changed": 3,
+    "insertions": 114,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "b5c85a36",
+    "message": "chore: cleanup token bucket after code review feedback",
+    "timestamp": "2024-06-16T08:21:25Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-170",
+    "files_changed": 2,
+    "insertions": 57,
+    "deletions": 17
+  },
+  {
+    "commit_hash": "adf2c6c6",
+    "message": "fix: rate limit header off-by-one error in boundary condition",
+    "timestamp": "2024-06-10T08:51:13Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-171",
+    "files_changed": 4,
+    "insertions": 130,
+    "deletions": 45
+  },
+  {
+    "commit_hash": "90e88b4d",
+    "message": "test: add edge case coverage for rate limit header",
+    "timestamp": "2024-06-11T02:48:23Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-171",
+    "files_changed": 3,
+    "insertions": 52,
+    "deletions": 16
+  },
+  {
+    "commit_hash": "16e809b2",
+    "message": "feat(rate-limit): rate limiter with error handling and logging",
+    "timestamp": "2024-06-12T05:18:15Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-171",
+    "files_changed": 6,
+    "insertions": 90,
+    "deletions": 60
+  },
+  {
+    "commit_hash": "47c8226b",
+    "message": "WIP: start violation tracker implementation",
+    "timestamp": "2024-06-12T16:55:11Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-171",
+    "files_changed": 3,
+    "insertions": 36,
+    "deletions": 24
+  },
+  {
+    "commit_hash": "0302ee4c",
+    "message": "chore: cleanup tier config after code review feedback",
+    "timestamp": "2024-06-13T08:24:46Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-171",
+    "files_changed": 3,
+    "insertions": 54,
+    "deletions": 17
+  },
+  {
+    "commit_hash": "bbf4a937",
+    "message": "docs(rate-limit): add inline docs for sliding window",
+    "timestamp": "2024-06-16T13:16:51Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-172",
+    "files_changed": 2,
+    "insertions": 83,
+    "deletions": 6
+  },
+  {
+    "commit_hash": "b6950dd3",
+    "message": "WIP: rate limit header skeleton \u2014 rough implementation",
+    "timestamp": "2024-06-17T05:45:20Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-172",
+    "files_changed": 3,
+    "insertions": 37,
+    "deletions": 19
+  },
+  {
+    "commit_hash": "d12ced47",
+    "message": "feat(rate-limit): implement IP allowlist core logic",
+    "timestamp": "2024-06-15T03:55:52Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-173",
+    "files_changed": 4,
+    "insertions": 56,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "da3267a6",
+    "message": "feat(rate-limit): add violation tracker handler",
+    "timestamp": "2024-06-15T06:07:49Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-173",
+    "files_changed": 6,
+    "insertions": 105,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "5e102652",
+    "message": "chore: cleanup distributed counter after code review feedback",
+    "timestamp": "2024-06-19T08:04:24Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-173",
+    "files_changed": 4,
+    "insertions": 114,
+    "deletions": 13
+  },
+  {
+    "commit_hash": "3e6ed121",
+    "message": "test: add edge case coverage for token bucket",
+    "timestamp": "2024-06-19T16:15:03Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-173",
+    "files_changed": 5,
+    "insertions": 150,
+    "deletions": 35
+  },
+  {
+    "commit_hash": "0081e603",
+    "message": "fix: correct IP allowlist response format to match spec",
+    "timestamp": "2024-06-21T14:18:48Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-173",
+    "files_changed": 6,
+    "insertions": 252,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "610de2c4",
+    "message": "feat(rate-limit): tier config with error handling and logging",
+    "timestamp": "2024-06-23T19:41:07Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-173",
+    "files_changed": 4,
+    "insertions": 54,
+    "deletions": 36
+  },
+  {
+    "commit_hash": "e122d37b",
+    "message": "WIP: start tier config implementation",
+    "timestamp": "2024-06-23T20:34:23Z",
+    "engineer_id": "mike",
+    "ticket_id": "PERF-173",
+    "files_changed": 7,
+    "insertions": 217,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "f41f2656",
+    "message": "feat(rate-limit): distributed counter with error handling and logging",
+    "timestamp": "2024-06-16T10:50:18Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-174",
+    "files_changed": 2,
+    "insertions": 29,
+    "deletions": 20
+  },
+  {
+    "commit_hash": "cb10e2a5",
+    "message": "chore: setup distributed counter module boilerplate",
+    "timestamp": "2024-06-16T12:21:15Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-174",
+    "files_changed": 4,
+    "insertions": 124,
+    "deletions": 25
+  },
+  {
+    "commit_hash": "6887831b",
+    "message": "refactor: finalize violation tracker public API surface",
+    "timestamp": "2024-06-16T22:21:21Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-174",
+    "files_changed": 3,
+    "insertions": 48,
+    "deletions": 18
+  },
+  {
+    "commit_hash": "2230d6c7",
+    "message": "refactor: finalize Redis counter public API surface",
+    "timestamp": "2024-06-17T10:44:36Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-175",
+    "files_changed": 6,
+    "insertions": 105,
+    "deletions": 8
+  },
+  {
+    "commit_hash": "fe05ddd4",
+    "message": "WIP: rough Redis counter draft, untested",
+    "timestamp": "2024-06-18T05:36:17Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-175",
+    "files_changed": 3,
+    "insertions": 91,
+    "deletions": 33
+  },
+  {
+    "commit_hash": "02fb60f5",
+    "message": "feat(rate-limit): token bucket with error handling and logging",
+    "timestamp": "2024-06-19T13:19:25Z",
+    "engineer_id": "jane",
+    "ticket_id": "PERF-175",
+    "files_changed": 4,
+    "insertions": 82,
+    "deletions": 22
+  },
+  {
+    "commit_hash": "df91b7a6",
+    "message": "chore: cleanup distributed counter after code review feedback",
+    "timestamp": "2024-06-20T16:18:36Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-177",
+    "files_changed": 2,
+    "insertions": 65,
+    "deletions": 9
+  },
+  {
+    "commit_hash": "43e416fb",
+    "message": "feat(rate-limit): distributed counter with error handling and logging",
+    "timestamp": "2024-06-28T15:12:44Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-177",
+    "files_changed": 3,
+    "insertions": 132,
+    "deletions": 35
+  },
+  {
+    "commit_hash": "10a92266",
+    "message": "WIP: rough rate limit config draft, untested",
+    "timestamp": "2024-06-29T11:35:54Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-177",
+    "files_changed": 4,
+    "insertions": 32,
+    "deletions": 28
+  },
+  {
+    "commit_hash": "5c532130",
+    "message": "WIP: rate limit header skeleton \u2014 rough implementation",
+    "timestamp": "2024-06-21T06:37:11Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-178",
+    "files_changed": 2,
+    "insertions": 28,
+    "deletions": 4
+  },
+  {
+    "commit_hash": "4f99c05f",
+    "message": "feat(rate-limit): wire rate limiter into existing service layer",
+    "timestamp": "2024-06-24T16:41:30Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-178",
+    "files_changed": 2,
+    "insertions": 19,
+    "deletions": 12
+  },
+  {
+    "commit_hash": "3cbfb16b",
+    "message": "refactor: finalize token bucket public API surface",
+    "timestamp": "2024-06-27T02:56:33Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-178",
+    "files_changed": 3,
+    "insertions": 97,
+    "deletions": 35
+  },
+  {
+    "commit_hash": "7249f0ba",
+    "message": "chore: cleanup IP allowlist after code review feedback",
+    "timestamp": "2024-06-23T03:11:30Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-179",
+    "files_changed": 4,
+    "insertions": 162,
+    "deletions": 32
+  },
+  {
+    "commit_hash": "27e1beca",
+    "message": "WIP: rough Redis counter draft, untested",
+    "timestamp": "2024-06-23T13:23:40Z",
+    "engineer_id": "sarah",
+    "ticket_id": "PERF-179",
+    "files_changed": 2,
+    "insertions": 52,
+    "deletions": 8
+  }
+]

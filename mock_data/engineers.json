@@ -1,0 +1,41 @@
+[
+  {
+    "engineer_id": "jane",
+    "name": "Jane Kim",
+    "role": "senior",
+    "specialization": [
+      "architecture",
+      "security",
+      "mentoring"
+    ],
+    "tenure_months": 48,
+    "team": "Platform Core",
+    "past_performance": "exceeds"
+  },
+  {
+    "engineer_id": "mike",
+    "name": "Mike Torres",
+    "role": "mid",
+    "specialization": [
+      "backend",
+      "databases",
+      "api"
+    ],
+    "tenure_months": 20,
+    "team": "Platform Core",
+    "past_performance": "meets"
+  },
+  {
+    "engineer_id": "sarah",
+    "name": "Sarah Chen",
+    "role": "junior",
+    "specialization": [
+      "frontend",
+      "testing",
+      "documentation"
+    ],
+    "tenure_months": 6,
+    "team": "Platform Core",
+    "past_performance": "developing"
+  }
+]

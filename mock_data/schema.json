@@ -1,0 +1,415 @@
+{
+  "_comment": "JSON Schema with realistic examples for performance-synthesizer. Entities: Epic, Ticket, Engineer, Commit.",
+
+  "schemas": {
+    "epic": {
+      "_description": "A large body of work tracked across multiple Jira tickets",
+      "fields": {
+        "id":              "string  — internal UUID",
+        "epic_key":        "string  — Jira-style key e.g. PLAT-EPIC-1",
+        "title":           "string",
+        "goal_statement":  "string  — one-sentence business objective",
+        "start_date":      "ISO-8601 date",
+        "end_date":        "ISO-8601 date",
+        "criticality":     "enum: critical | high | medium | low",
+        "status":          "enum: in_progress | completed | cancelled"
+      }
+    },
+    "ticket": {
+      "_description": "A single Jira issue belonging to an epic",
+      "fields": {
+        "ticket_id":        "string  — Jira-style key e.g. PLAT-42",
+        "epic_id":          "string  — references epic.id",
+        "title":            "string",
+        "description":      "string",
+        "estimate_hours":   "number  — original story-point estimate converted to hours",
+        "actual_hours":     "number  — hours logged on completion",
+        "status":           "enum: todo | in_progress | in_review | blocked | done",
+        "complexity":       "enum: low | medium | high | very_high",
+        "engineer_assigned":"string  — references engineer.engineer_id",
+        "sprint":           "string",
+        "created_date":     "ISO-8601 date",
+        "resolved_date":    "ISO-8601 date | null",
+        "blockers":         "array of {reason: string, resolved: bool}"
+      }
+    },
+    "engineer": {
+      "_description": "A software engineer whose output is being assessed",
+      "fields": {
+        "engineer_id":    "string",
+        "name":           "string",
+        "role":           "enum: junior | mid | senior | staff",
+        "specialization": "string  — primary technical domain",
+        "tenure_months":  "number  — months at the company",
+        "team":           "string"
+      }
+    },
+    "commit": {
+      "_description": "A git commit linked to a Jira ticket",
+      "fields": {
+        "commit_hash":  "string  — 7-char short SHA",
+        "message":      "string  — conventional commit or free-form",
+        "timestamp":    "ISO-8601 datetime",
+        "engineer_id":  "string  — references engineer.engineer_id",
+        "ticket_id":    "string  — references ticket.ticket_id",
+        "files_changed":"number",
+        "insertions":   "number",
+        "deletions":    "number"
+      }
+    }
+  },
+
+  "examples": {
+
+    "epics": [
+      {
+        "id": "epic-001",
+        "epic_key": "PLAT-EPIC-1",
+        "title": "OAuth 2.0 / SSO Integration",
+        "goal_statement": "Replace legacy session-cookie auth with OAuth 2.0 + PKCE to support enterprise SSO partners by Q2.",
+        "start_date": "2025-01-06",
+        "end_date": "2025-03-28",
+        "criticality": "critical",
+        "status": "completed"
+      },
+      {
+        "id": "epic-002",
+        "epic_key": "PLAT-EPIC-2",
+        "title": "Payment Gateway Overhaul",
+        "goal_statement": "Migrate from Stripe v2 to Stripe v3 SDK and add PayPal as a secondary processor to unblock enterprise contracts.",
+        "start_date": "2025-02-03",
+        "end_date": "2025-05-30",
+        "criticality": "high",
+        "status": "completed"
+      },
+      {
+        "id": "epic-003",
+        "epic_key": "PLAT-EPIC-3",
+        "title": "Full-Text Search Infrastructure",
+        "goal_statement": "Introduce Elasticsearch-backed search to replace slow LIKE queries and reduce p99 search latency below 200 ms.",
+        "start_date": "2025-03-10",
+        "end_date": "2025-06-20",
+        "criticality": "high",
+        "status": "in_progress"
+      },
+      {
+        "id": "epic-004",
+        "epic_key": "PLAT-EPIC-4",
+        "title": "API Rate Limiting & Throttling",
+        "goal_statement": "Implement per-tenant rate limiting on all public API endpoints to prevent abuse and meet SLA commitments.",
+        "start_date": "2025-04-07",
+        "end_date": "2025-06-27",
+        "criticality": "medium",
+        "status": "in_progress"
+      }
+    ],
+
+    "tickets": [
+      {
+        "_note": "Jane — accurate estimate, clean delivery",
+        "ticket_id": "PLAT-42",
+        "epic_id": "epic-001",
+        "title": "Implement PKCE flow for OAuth authorization code grant",
+        "description": "Add code_challenge / code_verifier generation and validation to the existing OAuth handler. Must pass OIDC conformance tests.",
+        "estimate_hours": 20,
+        "actual_hours": 18,
+        "status": "done",
+        "complexity": "high",
+        "engineer_assigned": "eng-001",
+        "sprint": "Sprint-12",
+        "created_date": "2025-01-08",
+        "resolved_date": "2025-01-17",
+        "blockers": []
+      },
+      {
+        "_note": "Jane — slightly under estimate (architecture experience)",
+        "ticket_id": "PLAT-55",
+        "epic_id": "epic-001",
+        "title": "Design token-refresh background service",
+        "description": "Create an async worker that proactively refreshes access tokens 60 s before expiry and writes them back to the session store.",
+        "estimate_hours": 16,
+        "actual_hours": 14,
+        "status": "done",
+        "complexity": "medium",
+        "engineer_assigned": "eng-001",
+        "sprint": "Sprint-13",
+        "created_date": "2025-01-20",
+        "resolved_date": "2025-01-28",
+        "blockers": []
+      },
+      {
+        "_note": "Mike — consistent mid-level delivery, minor overrun",
+        "ticket_id": "PLAT-71",
+        "epic_id": "epic-002",
+        "title": "Migrate checkout service to Stripe v3 SDK",
+        "description": "Replace all stripe-python v2 calls in checkout_service.py with v3 equivalents. Update webhook signature validation.",
+        "estimate_hours": 24,
+        "actual_hours": 26,
+        "status": "done",
+        "complexity": "medium",
+        "engineer_assigned": "eng-002",
+        "sprint": "Sprint-14",
+        "created_date": "2025-02-10",
+        "resolved_date": "2025-02-24",
+        "blockers": [
+          {
+            "reason": "Stripe v3 docs for webhook idempotency unclear; needed async support clarification from Stripe.",
+            "resolved": true
+          }
+        ]
+      },
+      {
+        "_note": "Sarah — junior overrun on a large, ambiguous task",
+        "ticket_id": "PLAT-88",
+        "epic_id": "epic-002",
+        "title": "Add PayPal Orders API integration",
+        "description": "Implement PayPal as a secondary payment processor using the Orders v2 API. Cover create-order, capture, and refund flows.",
+        "estimate_hours": 16,
+        "actual_hours": 24,
+        "status": "done",
+        "complexity": "high",
+        "engineer_assigned": "eng-003",
+        "sprint": "Sprint-15",
+        "created_date": "2025-02-24",
+        "resolved_date": "2025-03-14",
+        "blockers": [
+          {
+            "reason": "PayPal sandbox credentials not provisioned at sprint start; blocked 3 days waiting on DevOps.",
+            "resolved": true
+          },
+          {
+            "reason": "Unexpected currency-conversion edge case in capture response required design revision.",
+            "resolved": true
+          }
+        ]
+      },
+      {
+        "_note": "Sarah — currently blocked ticket",
+        "ticket_id": "PLAT-112",
+        "epic_id": "epic-003",
+        "title": "Index product catalog into Elasticsearch",
+        "description": "Write an ingestion pipeline that reads from Postgres products table and upserts documents into the platform-products-v1 index.",
+        "estimate_hours": 20,
+        "actual_hours": 14,
+        "status": "blocked",
+        "complexity": "high",
+        "engineer_assigned": "eng-003",
+        "sprint": "Sprint-17",
+        "created_date": "2025-04-07",
+        "resolved_date": null,
+        "blockers": [
+          {
+            "reason": "Elasticsearch cluster on staging is unreachable — infra ticket ENG-INFRA-34 open for 6 days.",
+            "resolved": false
+          }
+        ]
+      },
+      {
+        "_note": "Mike — rate-limiting ticket, on track",
+        "ticket_id": "PLAT-135",
+        "epic_id": "epic-004",
+        "title": "Implement sliding-window rate limiter with Redis",
+        "description": "Build a Redis-backed sliding-window counter middleware for FastAPI. Config: limits per tenant loaded from feature-flag service.",
+        "estimate_hours": 20,
+        "actual_hours": 19,
+        "status": "in_review",
+        "complexity": "medium",
+        "engineer_assigned": "eng-002",
+        "sprint": "Sprint-18",
+        "created_date": "2025-04-14",
+        "resolved_date": null,
+        "blockers": []
+      }
+    ],
+
+    "engineers": [
+      {
+        "engineer_id": "eng-001",
+        "name": "Jane Kim",
+        "role": "senior",
+        "specialization": "Backend / Security",
+        "tenure_months": 36,
+        "team": "Platform Core"
+      },
+      {
+        "engineer_id": "eng-002",
+        "name": "Mike Torres",
+        "role": "mid",
+        "specialization": "Backend / Payments",
+        "tenure_months": 18,
+        "team": "Platform Core"
+      },
+      {
+        "engineer_id": "eng-003",
+        "name": "Sarah Chen",
+        "role": "junior",
+        "specialization": "Backend / Data Pipelines",
+        "tenure_months": 8,
+        "team": "Platform Core"
+      }
+    ],
+
+    "commits": [
+      {
+        "commit_hash": "a3f9c12",
+        "message": "WIP: auth handler skeleton for PKCE flow",
+        "timestamp": "2025-01-09T10:14:00Z",
+        "engineer_id": "eng-001",
+        "ticket_id": "PLAT-42",
+        "files_changed": 3,
+        "insertions": 87,
+        "deletions": 4
+      },
+      {
+        "commit_hash": "b7d21e5",
+        "message": "feat(auth): implement code_challenge/verifier generation and validation",
+        "timestamp": "2025-01-13T15:30:00Z",
+        "engineer_id": "eng-001",
+        "ticket_id": "PLAT-42",
+        "files_changed": 5,
+        "insertions": 210,
+        "deletions": 32
+      },
+      {
+        "commit_hash": "c1a80fb",
+        "message": "fix oauth lib bug: verifier hashing used SHA-1 instead of SHA-256",
+        "timestamp": "2025-01-15T09:05:00Z",
+        "engineer_id": "eng-001",
+        "ticket_id": "PLAT-42",
+        "files_changed": 2,
+        "insertions": 14,
+        "deletions": 11
+      },
+      {
+        "commit_hash": "d4e33c9",
+        "message": "test(auth): add OIDC conformance suite for PKCE grant",
+        "timestamp": "2025-01-16T17:22:00Z",
+        "engineer_id": "eng-001",
+        "ticket_id": "PLAT-42",
+        "files_changed": 4,
+        "insertions": 156,
+        "deletions": 0
+      },
+      {
+        "commit_hash": "e9b12d4",
+        "message": "WIP: token refresh worker — basic polling loop",
+        "timestamp": "2025-01-21T11:00:00Z",
+        "engineer_id": "eng-001",
+        "ticket_id": "PLAT-55",
+        "files_changed": 2,
+        "insertions": 64,
+        "deletions": 0
+      },
+      {
+        "commit_hash": "f2c47a8",
+        "message": "feat(auth): proactive token refresh 60s before expiry with session store write-back",
+        "timestamp": "2025-01-27T14:45:00Z",
+        "engineer_id": "eng-001",
+        "ticket_id": "PLAT-55",
+        "files_changed": 6,
+        "insertions": 188,
+        "deletions": 22
+      },
+      {
+        "commit_hash": "07f5b31",
+        "message": "WIP: stripe v3 checkout migration — create payment intent",
+        "timestamp": "2025-02-11T09:30:00Z",
+        "engineer_id": "eng-002",
+        "ticket_id": "PLAT-71",
+        "files_changed": 4,
+        "insertions": 112,
+        "deletions": 89
+      },
+      {
+        "commit_hash": "18a9c62",
+        "message": "refactor(payments): replace all stripe v2 calls with v3 SDK equivalents",
+        "timestamp": "2025-02-17T16:10:00Z",
+        "engineer_id": "eng-002",
+        "ticket_id": "PLAT-71",
+        "files_changed": 7,
+        "insertions": 234,
+        "deletions": 198
+      },
+      {
+        "commit_hash": "29b0d73",
+        "message": "fix stripe webhook: switch to v3 signature validation header",
+        "timestamp": "2025-02-21T10:55:00Z",
+        "engineer_id": "eng-002",
+        "ticket_id": "PLAT-71",
+        "files_changed": 2,
+        "insertions": 29,
+        "deletions": 25
+      },
+      {
+        "commit_hash": "3ac1e84",
+        "message": "WIP: paypal orders integration — create order endpoint",
+        "timestamp": "2025-02-28T13:20:00Z",
+        "engineer_id": "eng-003",
+        "ticket_id": "PLAT-88",
+        "files_changed": 3,
+        "insertions": 95,
+        "deletions": 0
+      },
+      {
+        "commit_hash": "4bd2f95",
+        "message": "WIP: paypal capture flow — struggling with currency edge case",
+        "timestamp": "2025-03-05T11:40:00Z",
+        "engineer_id": "eng-003",
+        "ticket_id": "PLAT-88",
+        "files_changed": 2,
+        "insertions": 44,
+        "deletions": 18
+      },
+      {
+        "commit_hash": "5ce3a06",
+        "message": "fix paypal: handle multi-currency capture response correctly",
+        "timestamp": "2025-03-10T15:00:00Z",
+        "engineer_id": "eng-003",
+        "ticket_id": "PLAT-88",
+        "files_changed": 3,
+        "insertions": 67,
+        "deletions": 41
+      },
+      {
+        "commit_hash": "6df4b17",
+        "message": "feat(payments): complete PayPal refund flow + integration tests",
+        "timestamp": "2025-03-13T17:30:00Z",
+        "engineer_id": "eng-003",
+        "ticket_id": "PLAT-88",
+        "files_changed": 5,
+        "insertions": 143,
+        "deletions": 12
+      },
+      {
+        "commit_hash": "7eg5c28",
+        "message": "WIP: ES ingestion pipeline — postgres reader scaffolding",
+        "timestamp": "2025-04-08T10:00:00Z",
+        "engineer_id": "eng-003",
+        "ticket_id": "PLAT-112",
+        "files_changed": 2,
+        "insertions": 78,
+        "deletions": 0
+      },
+      {
+        "commit_hash": "8fh6d39",
+        "message": "feat(search): sliding-window rate limiter middleware skeleton",
+        "timestamp": "2025-04-15T09:15:00Z",
+        "engineer_id": "eng-002",
+        "ticket_id": "PLAT-135",
+        "files_changed": 3,
+        "insertions": 120,
+        "deletions": 0
+      },
+      {
+        "commit_hash": "9gi7e40",
+        "message": "feat(rate-limit): Redis counter with per-tenant config from feature flags",
+        "timestamp": "2025-04-22T14:00:00Z",
+        "engineer_id": "eng-002",
+        "ticket_id": "PLAT-135",
+        "files_changed": 5,
+        "insertions": 198,
+        "deletions": 31
+      }
+    ]
+  }
+}
